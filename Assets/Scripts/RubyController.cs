@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
-    Rigidbody2D rigidbody2D;
-    float horizontal; 
-    float vertical; 
+    Rigidbody2D rb;
+    float horizontal;
+    float vertical;
 
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody2D =GetComponent<Rigidbody2D>(); 
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -22,9 +22,9 @@ public class RubyController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        Vector2 position = rigidbody2D.position;
+        Vector2 position = rb.position;
         position.x = position.x + 3.0f * horizontal * Time.deltaTime;
         position.y = position.y + 3.0f * vertical * Time.deltaTime;
-        rigidbody2d.MovePosition = position;
+        rb.MovePosition(position);
     }
 }
