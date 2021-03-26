@@ -11,7 +11,7 @@ public class RubyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody2D = GetComponent<Rigidbody2D>(); 
+        rigidbody2D =GetComponent<Rigidbody2D>(); 
     }
 
     // Update is called once per frame
@@ -25,7 +25,6 @@ public class RubyController : MonoBehaviour
         Vector2 position = rigidbody2D.position;
         position.x = position.x + 3.0f * horizontal * Time.deltaTime;
         position.y = position.y + 3.0f * vertical * Time.deltaTime;
-        
-            rigidbody2d.MovePosition(position); 
+        rigidbody2d.MovePosition = position;
     }
 }
