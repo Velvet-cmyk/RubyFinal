@@ -12,6 +12,7 @@ public class EnemyController : MonoBehaviour
     int direction = 1;
     Animator anim;
     bool broken = true;
+    public ParticleSystem smokeEffect;
 
     // Start is called before the first frame update
     void Start()
