@@ -20,7 +20,8 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         timer -=Time.deltaTime;
-        if (time<0)
+        
+        if (timer<0)
         {
             direction=-direction;
             timer=changeTime;
