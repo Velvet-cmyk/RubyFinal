@@ -10,7 +10,8 @@ public class RubyController : MonoBehaviour
     public float speed = 3.0f;
     public float timeInvincible=2.0f;
     public int health { get { return currentHealth; } }
-
+    bool isInvincible; 
+    float invincibleTimer;
     Rigidbody2D rb;
     float horizontal;
     float vertical;
@@ -29,6 +30,7 @@ public class RubyController : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
+        
     }
     void FixedUpdate()
     {
