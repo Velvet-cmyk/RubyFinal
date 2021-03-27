@@ -80,6 +80,6 @@ public class EnemyController : MonoBehaviour
         rb.simulated = false;
         anim.SetTrigger("Fixed");
         
-        smokeEffect.Stop();
+        smokeEffect.Pause();
     }
 }
