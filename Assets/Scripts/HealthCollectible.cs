@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthCollectible : MonoBehaviour
 
-{
+{ public ParticleSystem burstEffect; 
     
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -17,6 +17,7 @@ public class HealthCollectible : MonoBehaviour
                 controller.ChangeHealth(1);
                 Destroy(gameObject);
             }
+            
 
 
         }
