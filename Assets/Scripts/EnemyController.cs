@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class enemycontroller : MonoBehaviour
 {
+    public float speed; 
+    Rigibody2d rb; 
+    
     // Start is called before the first frame update
     void Start()
     {
