@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!198 &88217691 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7459198034362248975, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1427824957}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &209960857
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +432,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367466390}
   m_CullTransparentMesh: 0
+--- !u!198 &416940493 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7459198034362248975, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2122317083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &421703281
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,8 +678,7 @@ MonoBehaviour:
   speed: 2
   vertical: 0
   changeTime: 3
-  smokeEffect: {fileID: 8399838161860571397, guid: 4d3cbd54e0e1a8e46a4129990a809e57,
-    type: 3}
+  smokeEffect: {fileID: 88217691}
 --- !u!1 &496709855
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,8 +1001,7 @@ MonoBehaviour:
   speed: 2
   vertical: 0
   changeTime: 3
-  smokeEffect: {fileID: 8399838161860571397, guid: 4d3cbd54e0e1a8e46a4129990a809e57,
-    type: 3}
+  smokeEffect: {fileID: 819525335}
 --- !u!1 &758312650
 GameObject:
   m_ObjectHideFlags: 3
@@ -1079,6 +1089,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!198 &819525335 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7459198034362248975, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 433129508}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &861007391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1957,8 +1973,7 @@ MonoBehaviour:
   speed: 2
   vertical: 0
   changeTime: 3
-  smokeEffect: {fileID: 8399838161860571397, guid: 4d3cbd54e0e1a8e46a4129990a809e57,
-    type: 3}
+  smokeEffect: {fileID: 416940493}
 --- !u!1 &1710360031
 GameObject:
   m_ObjectHideFlags: 0
@@ -8773,6 +8788,11 @@ PrefabInstance:
         type: 3}
       propertyPath: moveWithTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459198034362248975, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
+        type: 3}
+      propertyPath: TriggerModule.enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2919367179415727521, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e, type: 3}
