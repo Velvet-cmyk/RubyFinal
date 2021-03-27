@@ -39,7 +39,7 @@ public class RubyController : MonoBehaviour
     public void ChangeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        
+        Debug.Log(currentHealth + "/" + maxHealth);
     }
 
 }
