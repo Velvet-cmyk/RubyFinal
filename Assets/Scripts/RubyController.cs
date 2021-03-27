@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
-    public int maxHealth= 5;
+    public int maxHealth = 5;
     int currentHealth;
     Rigidbody2D rb;
     float horizontal;
@@ -14,7 +14,7 @@ public class RubyController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        currentHealth=maxHealth;
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class RubyController : MonoBehaviour
     }
     void ChangeHealth(int amount)
     {
-        currentHealth = Mathf.Clamp(currentHealth +amount, -0, maxHealth); 
-        Debug.Log(currentHealth+"/" + maxHealth); 
+        currentHealth = Mathf.Clamp(currentHealth + amount, -0, maxHealth);
+        Debug.Log(currentHealth + "/" + maxHealth);
     }
 }
