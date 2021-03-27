@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemycontroller : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     public float speed; 
     Rigidbody2D rb; 
