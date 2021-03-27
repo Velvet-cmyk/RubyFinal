@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3339279421593468315}
   - component: {fileID: 6033701530178343573}
   - component: {fileID: 9151853753570236528}
+  - component: {fileID: 2919367179415727521}
   m_Layer: 0
   m_Name: bot
   m_TagString: Untagged
@@ -151,6 +152,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2919367179415727521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5075033389508397110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d4a02bf22e36c4fb4c9debe2b436bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  vertical: 0
+  changeTime: 3
+  smokeEffect: {fileID: 7459198034362248975}
 --- !u!1001 &1375389380206403082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -223,6 +240,12 @@ PrefabInstance:
 --- !u!4 &7459198034362248974 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8399838161860571396, guid: 4d3cbd54e0e1a8e46a4129990a809e57,
+    type: 3}
+  m_PrefabInstance: {fileID: 1375389380206403082}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7459198034362248975 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8399838161860571397, guid: 4d3cbd54e0e1a8e46a4129990a809e57,
     type: 3}
   m_PrefabInstance: {fileID: 1375389380206403082}
   m_PrefabAsset: {fileID: 0}
