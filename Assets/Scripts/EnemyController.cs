@@ -22,8 +22,7 @@ public class EnemyController : MonoBehaviour
     //this function is called once per frame
     void Update()
     {
-        anim.SetFloat ("Move X", 0);
-        anim.SetFloat("Move Y",direction)
+        
         timer -=Time.deltaTime;
         
         if (timer<0)
