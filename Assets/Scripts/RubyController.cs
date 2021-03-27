@@ -38,7 +38,11 @@ public class RubyController : MonoBehaviour
             lookDirection, 1.5f, LayerMask.GetMask("NPC"));
             if (hit.collider != null)
             {
-                Debug.Log("Raycast has hit the object" + hit.collider.gameObject);
+                NonPlayerCharacter character = hit.collider.GetComponent<NonPlayerCharacter>();
+                if (character != null)
+                {
+                    character.DisplayDialog();
+                }
             }
         }
         horizontal = Input.GetAxis("Horizontal");
