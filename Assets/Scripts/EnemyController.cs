@@ -37,7 +37,7 @@ public class EnemyController : MonoBehaviour
         else
         {
             {
-                position.x=position.x+Time.deltaTime*speed*direction; 
+                position.x=position.x+Time.deltaTime*speed*direction;; 
             }
         }
          
