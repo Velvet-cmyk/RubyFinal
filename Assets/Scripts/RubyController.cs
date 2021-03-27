@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
-    public int maxHealth=5;
-    public int currentHealth;
-    public float speed = 3.0f;
+    public int maxHealth = 5;
 
+    public float speed = 3.0f;
+    public int health { get { return currentHealth; } }
+    public int currentHealth;
     Rigidbody2D rb;
     float horizontal;
     float vertical;
@@ -17,7 +18,7 @@ public class RubyController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
-        
+
     }
 
     // Update is called once per frame
