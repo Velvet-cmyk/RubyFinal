@@ -35,20 +35,20 @@ public class RubyController : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
         Vector2 move = new Vector2(horizontal, vertical);
         if (!Mathf.Approximately(move.x, 0.0f) ||
-        !Mathf.Approximately(move.y,0.0f))
+        !Mathf.Approximately(move.y, 0.0f))
         {
-            lookDirection.Set(move.x,move.y);
-            lookDirection.Normalize(); 
+            lookDirection.Set(move.x, move.y);
+            lookDirection.Normalize();
         }
         anim.SetFloat("Look X", lookDirection.x);
         anim.SetFloat("look Y", lookDirection.y);
-        anim.SetFloat ("Speed", move.magnitude); 
+        anim.SetFloat("Speed", move.magnitude);
         if (isInvincible)
-            {
-                invincibleTimer -= Time.deltaTime;
-                if (invincibleTimer < 0)
-                    isInvincible = false;
-            }
+        {
+            invincibleTimer -= Time.deltaTime;
+            if (invincibleTimer < 0)
+                isInvincible = false;
+        }
     }
     void FixedUpdate()
     {
