@@ -28,7 +28,7 @@ public class EnemyController : MonoBehaviour
                 position.x=position.x+Time.deltaTime*speed; 
             }
         }
-        position.x=position.x+Time.deltaTime*speed; 
+         
         rb.MovePosition(position); 
     }
 }
