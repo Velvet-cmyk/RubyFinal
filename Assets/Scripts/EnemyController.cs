@@ -78,9 +78,9 @@ public class EnemyController : MonoBehaviour
     {
         broken = false;
         rb.simulated = false;
-        smokeEffect.Pause();
-        anim.SetTrigger("Fixed");
 
+        anim.SetTrigger("Fixed");
+        smokeEffect.Stop();
 
     }
 }
