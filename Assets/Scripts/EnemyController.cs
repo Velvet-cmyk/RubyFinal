@@ -16,8 +16,8 @@ public class enemycontroller : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 position=GetComponent<Rigidbody2D>().position;
+        Vector2 position=rb.position;
         position.x=position.x+Time.deltaTime*speed; 
-        rigibody2d.MovePosition(position); 
+        rb.MovePosition(position); 
     }
 }
