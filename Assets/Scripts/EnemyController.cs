@@ -23,10 +23,7 @@ public class EnemyController : MonoBehaviour
     //this function is called once per frame
     void Update()
     {
-        if (!broken)
-        {
-            return;
-        }
+
 
 
         timer -= Time.deltaTime;
@@ -35,6 +32,10 @@ public class EnemyController : MonoBehaviour
         {
             direction = -direction;
             timer = changeTime;
+        }
+        if (!broken)
+        {
+            return;
         }
     }
 
