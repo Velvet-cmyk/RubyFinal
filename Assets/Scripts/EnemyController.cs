@@ -72,7 +72,7 @@ public class EnemyController : MonoBehaviour
     }
     public void Fix()
     {
-        broken=false;
-        rb.simulated=false; 
+        broken = false;
+        rb.simulated = false;
     }
 }
