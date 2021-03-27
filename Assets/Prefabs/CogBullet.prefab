@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1998870085916856526}
   - component: {fileID: 5039269142872886159}
   - component: {fileID: 7207188451614147352}
+  - component: {fileID: -7329085682733244708}
   m_Layer: 9
   m_Name: CogBullet
   m_TagString: Untagged
@@ -130,3 +131,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.27, y: 0.97}
   m_EdgeRadius: 0
+--- !u!114 &-7329085682733244708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5842185214771222816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e20d1800e623e0409b205e2bcd24e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
