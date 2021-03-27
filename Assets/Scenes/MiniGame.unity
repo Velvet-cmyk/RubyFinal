@@ -7031,6 +7031,8 @@ MonoBehaviour:
   speed: 2
   vertical: 0
   changeTime: 3
+  smokeEffect: {fileID: 8399838161860571397, guid: 4d3cbd54e0e1a8e46a4129990a809e57,
+    type: 3}
 --- !u!1 &1985177340 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2397951272827917643, guid: 52fbb761594de424e993d4eb977d610e,
