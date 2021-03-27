@@ -23,6 +23,10 @@ public class EnemyController : MonoBehaviour
     //this function is called once per frame
     void Update()
     {
+        if (!broken)
+        {
+            return;
+        }
 
 
         timer -= Time.deltaTime;
@@ -36,6 +40,10 @@ public class EnemyController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(!broken)
+        {
+            return; 
+        }
 
         Vector2 position = rb.position;
         if (vertical)
