@@ -40,9 +40,9 @@ public class EnemyController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(!broken)
+        if (!broken)
         {
-            return; 
+            return;
         }
 
         Vector2 position = rb.position;
