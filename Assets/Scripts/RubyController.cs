@@ -29,6 +29,7 @@ public class RubyController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
 
+
     }
     public void PlaySound(AudioClip clip)
     {
@@ -72,6 +73,7 @@ public class RubyController : MonoBehaviour
         {
             Launch();
         }
+        
     }
     void FixedUpdate()
     {

@@ -95,8 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ad3f1d75d4a2945bc949a25af1564f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  burstEffect: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6,
-    type: 3}
+  collectedClip: {fileID: 8300000, guid: 00a3804f57ea365489dce7b904ab63fc, type: 3}
 --- !u!61 &3163885879167092223
 BoxCollider2D:
   m_ObjectHideFlags: 0
