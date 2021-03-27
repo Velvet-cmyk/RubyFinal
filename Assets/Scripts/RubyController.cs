@@ -59,9 +59,10 @@ public class RubyController : MonoBehaviour
     }
     public void ChangeHealth(int amount)
     {
-        anim.SetTrigger("Hit");
+
         if (amount < 0)
         {
+            anim.SetTrigger("Hit");
             if (isInvincible)
                 return;
             isInvincible = true;
