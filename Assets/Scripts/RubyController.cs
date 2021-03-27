@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
-    public float speed = 3.0f;
     public int maxHealth = 5;
     int currentHealth;
+    public float speed = 3.0f;
+   
     Rigidbody2D rb;
     float horizontal;
     float vertical;
