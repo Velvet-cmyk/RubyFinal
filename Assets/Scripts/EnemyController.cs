@@ -16,6 +16,8 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        timer=changeTime;
+        anim=GetComponent<Animator>(); 
     }
     //this function is called once per frame
     void Update()
