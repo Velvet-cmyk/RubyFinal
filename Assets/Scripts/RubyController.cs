@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
+    public int maxHealth= 5;
+    int currentHealth;
     Rigidbody2D rb;
     float horizontal;
     float vertical;
@@ -12,6 +14,7 @@ public class RubyController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        currentHealth=maxHealth;
     }
 
     // Update is called once per frame
