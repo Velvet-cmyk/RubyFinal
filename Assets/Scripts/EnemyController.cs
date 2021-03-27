@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour
     //this function is called once per frame
     void Update()
     {
-        time -=Time.deltaTime;
+        timer -=Time.deltaTime;
         if (time<0)
         {
             direction=-direction;
