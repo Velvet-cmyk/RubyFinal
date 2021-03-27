@@ -18,7 +18,7 @@ public class HealthCollectible : MonoBehaviour
                 Destroy(gameObject);
             }
 
-            burstEffect.Start(); 
+            burstEffect.(); 
 
 
         }
