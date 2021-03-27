@@ -22,6 +22,10 @@ public class EnemyController : MonoBehaviour
     //this function is called once per frame
     void Update()
     {
+        if(!broken)
+        {
+            return; 
+        }
         
         timer -=Time.deltaTime;
         
