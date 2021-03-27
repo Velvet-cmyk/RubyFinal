@@ -74,8 +74,9 @@ public class RubyController : MonoBehaviour
             Launch();
         }
         if (Input.GetKeyDown("escape"))
-            
+        {
             Application.Quit();
+        }
     }
     void FixedUpdate()
     {
