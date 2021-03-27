@@ -15,10 +15,13 @@ public class RubyController : MonoBehaviour
     Rigidbody2D rb;
     float horizontal;
     float vertical;
+    Animator anim;
+    Vector2 lookDirection = new Vector2(1, 0);
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
 
