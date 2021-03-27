@@ -32,12 +32,12 @@ public class EnemyController : MonoBehaviour
         Vector2 position=rb.position;
         if(vertical)
         {
-            position.y=position.y+Time.deltaTime*speed; 
+            position.y=position.y+Time.deltaTime*speed*direction;; 
         }
         else
         {
             {
-                position.x=position.x+Time.deltaTime*speed; 
+                position.x=position.x+Time.deltaTime*speed*direction; 
             }
         }
          
