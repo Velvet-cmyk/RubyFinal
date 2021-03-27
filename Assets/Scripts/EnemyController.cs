@@ -16,9 +16,17 @@ public class EnemyController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
+    //this function is called once per frame
+    void Update()
+    {
+        time -=Time.deltaTime;
+        if (time<0)
+        {
+            direction=-direction;
+            timer=changeTime;
+        }
+    }
     
-    // Update is called once per frame
     void FixedUpdate()
     {
         Vector2 position=rb.position;
