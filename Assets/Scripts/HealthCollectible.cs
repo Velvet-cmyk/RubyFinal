@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class HealthCollectible : MonoBehaviour
 {
-   void OnTriggerEnter2d(Collider2D other)
-   
+    void OnTriggerEnter2d(Collider2D other)
+    {
+        Debug.Log("Object that entered the trigger :" + other);
+
+    }
+
 }
