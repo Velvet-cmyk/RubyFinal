@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public float speed; 
+    public bool vertical; 
     Rigidbody2D rb; 
 
     // Start is called before the first frame update
