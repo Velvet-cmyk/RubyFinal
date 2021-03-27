@@ -41,7 +41,7 @@ public class RubyController : MonoBehaviour
             lookDirection.Normalize();
         }
         anim.SetFloat("Look X", lookDirection.x);
-        anim.SetFloat("look Y", lookDirection.y);
+        anim.SetFloat("Look Y", lookDirection.y);
         anim.SetFloat("Speed", move.magnitude);
         if (isInvincible)
         {
@@ -59,6 +59,7 @@ public class RubyController : MonoBehaviour
     }
     public void ChangeHealth(int amount)
     {
+        anim.SetTrigger("Hit");
         if (amount < 0)
         {
             if (isInvincible)
