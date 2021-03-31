@@ -2,88 +2,88 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyControllerVert: MonoBehaviour
+public class EnemyControllerVert : MonoBehaviour
 
 {
     public float speed;
-public bool vertical;
-public float changeTime = 3.0f;
-Rigidbody2D rb; z
-float timer;
-int direction = 1;
-Animator anim;
-bool broken = true;
-public ParticleSystem smokeEffect;
+    public bool vertical;
+    public float changeTime = 3.0f;
+    Rigidbody2D rb;
+    float timer;
+    int direction = 1;
+    Animator anim;
+    bool broken = true;
+    public ParticleSystem smokeEffect;
 
-// Start is called before the first frame update
-void Start()
-{
-    rb = GetComponent<Rigidbody2D>();
-    timer = changeTime;
-    anim = GetComponent<Animator>();
-}
-//this function is called once per frame
-void Update()
-{
-
-
-
-    timer -= Time.deltaTime;
-
-    if (timer < 0)
+    // Start is called before the first frame update
+    void Start()
     {
-        direction = -direction;
+        rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
+        anim = GetComponent<Animator>();
     }
-    if (!broken)
+    //this function is called once per frame
+    void Update()
     {
-        return;
-    }
-}
 
-void FixedUpdate()
-{
-    if (!broken)
-    {
-        return;
-    }
 
-    Vector2 position = rb.position;
-    if (vertical)
-    {
-        position.y = position.y + Time.deltaTime * speed * direction; ;
-        anim.SetFloat("Move X", 0);
-        anim.SetFloat("Move Y", direction);
-    }
-    else
-    {
+
+        timer -= Time.deltaTime;
+
+        if (timer < 0)
         {
-            position.x = position.x + Time.deltaTime * speed * direction; ;
-            anim.SetFloat("Move X", direction);
-            anim.SetFloat("Move Y", 0);
+            direction = -direction;
+            timer = changeTime;
+        }
+        if (!broken)
+        {
+            return;
         }
     }
 
-    rb.MovePosition(position);
-}
-void OnCollisionEnter2D(Collision2D other)
-{
-    RubyController player = other.gameObject.GetComponent<RubyController>();
-
-    if (player != null)
+    void FixedUpdate()
     {
-        player.ChangeHealth(-1);
+        if (!broken)
+        {
+            return;
+        }
+
+        Vector2 position = rb.position;
+        if (vertical)
+        {
+            position.y = position.y + Time.deltaTime * speed * direction; ;
+            anim.SetFloat("Move X", direction);
+            anim.SetFloat("Move Y", 0);
+        }
+        else
+        {
+            {
+                position.x = position.x + Time.deltaTime * speed * direction; ;
+                anim.SetFloat("Move X", 0);
+                anim.SetFloat("Move Y", direction);
+            }
+        }
+
+        rb.MovePosition(position);
     }
-}
-public void Fix()
-{
-    broken = false;
-    rb.simulated = false;
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        RubyController player = other.gameObject.GetComponent<RubyController>();
 
-    anim.SetTrigger("Fixed");
-    smokeEffect.Stop();
+        if (player != null)
+        {
+            player.ChangeHealth(-1);
+        }
+    }
+    public void Fix()
+    {
+        broken = false;
+        rb.simulated = false;
 
-}
+        anim.SetTrigger("Fixed");
+        smokeEffect.Stop();
+
+    }
 }
 
 
