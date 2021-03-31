@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyControllerVert : MonoBehaviour
+public class HardEnemyController : MonoBehaviour
 
 {
     public float speed;
@@ -72,7 +72,7 @@ public class EnemyControllerVert : MonoBehaviour
 
         if (player != null)
         {
-            player.ChangeHealth(-1);
+            player.ChangeHealth(-2);
         }
     }
     public void Fix()
