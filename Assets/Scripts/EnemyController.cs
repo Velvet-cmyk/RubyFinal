@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour
     public float speed;
     public bool vertical;
     public float changeTime = 3.0f;
-    Rigidbody2D rb;
+    Rigidbody2D rb;z
     float timer;
     int direction = 1;
     Animator anim;
