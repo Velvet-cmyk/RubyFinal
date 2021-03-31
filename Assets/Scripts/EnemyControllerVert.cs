@@ -6,7 +6,7 @@ public class EnemyControllerVert : MonoBehaviour
 
 {
     public float speed;
-    public bool vertical;
+    public bool horizontal;
     public float changeTime = 3.0f;
     Rigidbody2D rb;
     float timer;
@@ -49,16 +49,16 @@ public class EnemyControllerVert : MonoBehaviour
         }
 
         Vector2 position = rb.position;
-        if (vertical)
+        if (horizontal)
         {
-            position.x = position.y + Time.deltaTime * speed * direction; ;
+            position.y = position.y + Time.deltaTime * speed * direction; ;
             anim.SetFloat("Move X", direction);
             anim.SetFloat("Move Y", 0);
         }
         else
         {
             {
-                position.y = position.x + Time.deltaTime * speed * direction; ;
+                position.x = position.x + Time.deltaTime * speed * direction; ;
                 anim.SetFloat("Move X", 0);
                 anim.SetFloat("Move Y", direction);
             }
