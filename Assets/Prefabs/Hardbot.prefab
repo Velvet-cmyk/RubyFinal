@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  horizontal: 1
+  vertical: 0
   changeTime: 3
   smokeEffect: {fileID: 8399838161860571397, guid: 4d3cbd54e0e1a8e46a4129990a809e57,
     type: 3}
@@ -155,7 +155,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.041231155, y: 0.4482007}
+  m_Offset: {x: -0.041231155, y: 1.0116916}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -166,5 +166,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.89640236, y: 0.8964014}
+  m_Size: {x: 0.89640236, y: 2.0233831}
   m_EdgeRadius: 0
