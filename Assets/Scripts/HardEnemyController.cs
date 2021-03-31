@@ -6,7 +6,7 @@ public class HardEnemyController : MonoBehaviour
 
 {
     public float speed;
-    public bool horizontal;
+    public bool vertical;
     public float changeTime = 3.0f;
     Rigidbody2D rb;
     float timer;
@@ -49,18 +49,18 @@ public class HardEnemyController : MonoBehaviour
         }
 
         Vector2 position = rb.position;
-        if (horizontal)
+        if (vertical)
         {
-            position.x = position.x + Time.deltaTime * speed * direction; ;
-            anim.SetFloat("Move X", direction);
-            anim.SetFloat("Move Y", 0);
+            position.y = position.y + Time.deltaTime * speed * direction; ;
+            anim.SetFloat("Move X", 0);
+            anim.SetFloat("Move Y", direction);
         }
         else
         {
             {
-                position.y = position.y + Time.deltaTime * speed * direction; ;
-                anim.SetFloat("Move X", 0);
-                anim.SetFloat("Move Y", direction);
+                position.x = position.x + Time.deltaTime * speed * direction; ;
+                anim.SetFloat("Move X", direction);
+                anim.SetFloat("Move Y", 0);
             }
         }
 
