@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D other)
     {
-        EnemyController e = other.collider.GetComponent<EnemyController>();
+        EnemyController e = other.collider.GetComponent<EnemyController, HardEnemyController>();
         if (e != null)
         {
             e.Fix();
