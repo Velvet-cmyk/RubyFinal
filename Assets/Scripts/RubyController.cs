@@ -19,7 +19,7 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public GameObject projectilePrefab;
     AudioSource audioSource;
- 
+    public AudioClip walkingSound;
     public ParticleSystem healthEffect;
     // Start is called before the first frame update
     void Start()
@@ -71,7 +71,7 @@ public class RubyController : MonoBehaviour
         anim.SetFloat("Look X", lookDirection.x);
         anim.SetFloat("Look Y", lookDirection.y);
         anim.SetFloat("Speed", move.magnitude);
-        
+        PlaySound(walkingSound);
         if (isInvincible)
         {
             invincibleTimer -= Time.deltaTime;
