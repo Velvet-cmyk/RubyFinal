@@ -28,10 +28,10 @@ public class HealthCollectible : MonoBehaviour
 
 
 
+            if (gameObject !=null)
 
-        
         }
-        if ()
+        
 
     }
 
