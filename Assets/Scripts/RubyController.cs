@@ -20,7 +20,7 @@ public class RubyController : MonoBehaviour
     public GameObject projectilePrefab;
     AudioSource audioSource;
 
-    public ParticleSystem healthEffect;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +28,7 @@ public class RubyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
-        healthEffect = GetComponent<ParticleSystem>();
+        
 
 
 
