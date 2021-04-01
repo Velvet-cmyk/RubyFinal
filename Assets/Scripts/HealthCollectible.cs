@@ -29,8 +29,11 @@ public class HealthCollectible : MonoBehaviour
 
 
 
+        
         }
+        if (gameObject=false)
 
     }
+
 
 }
