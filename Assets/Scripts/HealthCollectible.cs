@@ -17,7 +17,7 @@ public class HealthCollectible : MonoBehaviour
         {
             if (controller.currentHealth < controller.maxHealth)
             {
-                GameObject ParticleSystem = Instantiate(healthEffect);
+                GameObject ParticleSystem = Instantiate(gameObject);
                 controller.ChangeHealth(1);
                 Destroy(gameObject);
                 controller.PlaySound(collectedClip);
