@@ -1496,6 +1496,12 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 1616392507}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &676748121 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1806339848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &727493149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1837,6 +1843,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectibleHealth (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6161365162805104444, guid: d16ddddee1c390f4aabd500a12b26878,
+        type: 3}
+      propertyPath: healthEffect
+      value: 
+      objectReference: {fileID: 676748121}
     - target: {fileID: 7507693980744349886, guid: d16ddddee1c390f4aabd500a12b26878,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3164,11 +3175,16 @@ PrefabInstance:
     - target: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6,
         type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 1.1168145
+      value: 1.5407443
       objectReference: {fileID: 0}
     - target: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6,
         type: 3}
       propertyPath: EmissionModule.m_BurstCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6,
@@ -3209,7 +3225,7 @@ PrefabInstance:
     - target: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6,
         type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6,
         type: 3}
