@@ -15,7 +15,7 @@ public class Footsteps : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if (Controller)
+    
 
     }
 }
