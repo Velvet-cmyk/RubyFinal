@@ -27,7 +27,7 @@ public class RubyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
-        healthEffect = GetComponent<ParticleSystem>(); 
+        healthEffect = GetComponent<ParticleSystem>();
 
 
 
@@ -35,6 +35,10 @@ public class RubyController : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
+    }
+    public void Play(ParticleSystem healthEffect)
+    {
+        healthEffect.Play();
     }
     // Update is called once per frame
     void Update()
