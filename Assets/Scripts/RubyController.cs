@@ -38,6 +38,7 @@ public class RubyController : MonoBehaviour
         audioSource.PlayOneShot(clip);
         
     }
+    PlaySound(walkingSound); 
     public void Play(ParticleSystem healthEffect)
     {
         healthEffect.Play();
