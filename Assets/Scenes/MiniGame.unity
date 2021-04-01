@@ -1046,6 +1046,21 @@ PrefabInstance:
       propertyPath: InitialModule.startSize.minScalar
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7358231447619000591, guid: d16ddddee1c390f4aabd500a12b26878,
+        type: 3}
+      propertyPath: InitialModule.startSize.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358231447619000591, guid: d16ddddee1c390f4aabd500a12b26878,
+        type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358231447619000591, guid: d16ddddee1c390f4aabd500a12b26878,
+        type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7507693980744349886, guid: d16ddddee1c390f4aabd500a12b26878,
         type: 3}
       propertyPath: m_LocalPosition.x
