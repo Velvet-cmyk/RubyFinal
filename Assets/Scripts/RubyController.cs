@@ -35,7 +35,7 @@ public class RubyController : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
-        audioSource.PlaySound(); 
+        audioSource.PlaySound(clip); 
     }
     public void Play(ParticleSystem healthEffect)
     {
