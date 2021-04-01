@@ -8,12 +8,14 @@ public class Footsteps : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioSource=GetComponent<AudioSource>(); 
+        audioSource = GetComponent<AudioSource>();
+        RubyController controller = GetComponent<RubyController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        RubyController controller = other.GetComponent<RubyController>();
+       if (Controller)
+
     }
 }
