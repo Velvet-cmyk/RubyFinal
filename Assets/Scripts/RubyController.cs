@@ -85,7 +85,7 @@ public class RubyController : MonoBehaviour
         {
             Application.Quit();
         }
-        PlaySound(walkingSound);
+
     }
     void FixedUpdate()
     {
@@ -107,7 +107,9 @@ public class RubyController : MonoBehaviour
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
+        PlaySound(walkingSound);
     }
+
     void Launch()
     {
         GameObject projectileObject = Instantiate(projectilePrefab, rb.position + Vector2.up * 0.5f, Quaternion.identity);
