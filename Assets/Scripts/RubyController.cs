@@ -19,7 +19,7 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public GameObject projectilePrefab;
     AudioSource audioSource;
-    
+
     public ParticleSystem healthEffect;
     // Start is called before the first frame update
     void Start()
@@ -39,10 +39,7 @@ public class RubyController : MonoBehaviour
 
     }
 
-    public void Play(ParticleSystem healthEffect)
-    {
-        healthEffect.Play();
-    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -71,7 +68,7 @@ public class RubyController : MonoBehaviour
         anim.SetFloat("Look X", lookDirection.x);
         anim.SetFloat("Look Y", lookDirection.y);
         anim.SetFloat("Speed", move.magnitude);
-        
+
         if (isInvincible)
         {
             invincibleTimer -= Time.deltaTime;
@@ -108,7 +105,7 @@ public class RubyController : MonoBehaviour
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
-       
+
     }
 
     void Launch()
