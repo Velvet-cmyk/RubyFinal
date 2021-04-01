@@ -17,7 +17,7 @@ public class HealthCollectible : MonoBehaviour
         {
             if (controller.currentHealth < controller.maxHealth)
             {
-                controller.healthEffect.Play();
+                GameObject projectileObject = Instantiate(projectilePrefab, rb.position + Vector2.up * 0.5f, Quaternion.identity);
                 controller.ChangeHealth(1);
                 Destroy(gameObject);
                 controller.PlaySound(collectedClip);
