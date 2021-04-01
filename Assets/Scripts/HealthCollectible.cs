@@ -22,7 +22,7 @@ public class HealthCollectible : MonoBehaviour
                 Destroy(gameObject);
                 controller.PlaySound(collectedClip);
 
-                Instantiate(healthEffect, trig.transform.position, Quaternion.identity) as (ParticleSystem);
+               
 
 
 
