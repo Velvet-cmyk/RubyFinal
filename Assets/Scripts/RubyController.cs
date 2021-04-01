@@ -19,7 +19,7 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public GameObject projectilePrefab;
     AudioSource audioSource;
-    public AudioClip walkingSound; 
+    public AudioClip walkingSound;
     public ParticleSystem healthEffect;
     // Start is called before the first frame update
     void Start()
@@ -36,9 +36,9 @@ public class RubyController : MonoBehaviour
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
-        
+
     }
-    PlaySound(walkingSound); 
+
     public void Play(ParticleSystem healthEffect)
     {
         healthEffect.Play();
@@ -85,6 +85,7 @@ public class RubyController : MonoBehaviour
         {
             Application.Quit();
         }
+        PlaySound(walkingSound);
     }
     void FixedUpdate()
     {
