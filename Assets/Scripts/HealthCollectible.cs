@@ -6,7 +6,7 @@ public class HealthCollectible : MonoBehaviour
 
 {
     public AudioClip collectedClip;
-    public ParticleSystem healthEffect; 
+    public ParticleSystem healthEffect;
 
 
     void OnTriggerEnter2D(Collider2D other)
@@ -20,7 +20,7 @@ public class HealthCollectible : MonoBehaviour
                 controller.ChangeHealth(1);
                 Destroy(gameObject);
                 controller.PlaySound(collectedClip);
-                
+                healthEffect.Play();
 
             }
 
