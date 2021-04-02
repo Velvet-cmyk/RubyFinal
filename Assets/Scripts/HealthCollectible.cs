@@ -35,7 +35,7 @@ public class HealthCollectible : MonoBehaviour
 
 
         }
-        if (controller)
+        
 
 
 
