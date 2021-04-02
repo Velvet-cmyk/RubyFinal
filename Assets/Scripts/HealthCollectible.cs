@@ -32,12 +32,13 @@ public class HealthCollectible : MonoBehaviour
 
 
             }
+            if (controller.currentHealth < controller.maxHealth)
+            {
+
+            }
 
         }
-        if (controller.currentHealth<maxHealth)
-        {
-
-        }
+        
 
     }
 }
