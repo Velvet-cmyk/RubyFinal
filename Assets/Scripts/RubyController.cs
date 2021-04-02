@@ -20,6 +20,7 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public GameObject projectilePrefab;
     AudioSource audioSource;
+    GameObject healthEffect; 
     
 
 
@@ -112,6 +113,7 @@ public class RubyController : MonoBehaviour
             invincibleTimer = timeInvincible;
             PlaySound(hitClip);
         }
+        
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
 
