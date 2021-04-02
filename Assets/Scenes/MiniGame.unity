@@ -14644,6 +14644,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6866131398147141809, guid: 918942b0257568d46983b79b6d3c3982,
         type: 3}
+      propertyPath: hitClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 10c1ddc2a55f66f48be452361addbf61, type: 3}
+    - target: {fileID: 6866131398147141809, guid: 918942b0257568d46983b79b6d3c3982,
+        type: 3}
       propertyPath: healthEffect
       value: 
       objectReference: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6,
