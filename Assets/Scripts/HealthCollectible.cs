@@ -12,10 +12,7 @@ public class HealthCollectible : MonoBehaviour
     public GameObject healthEffect;
     public ParticleSystem health;
 
-    void Start()
-    {
-        healthEffect.SetActive(false);
-    }
+    
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -30,7 +27,7 @@ public class HealthCollectible : MonoBehaviour
             {
 
 
-                healthEffect = Instantiate(healthEffect);
+                
                 healthEffect.SetActive(true);
 
                 controller.ChangeHealth(1);
