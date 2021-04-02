@@ -25,7 +25,7 @@ public class HealthCollectible : MonoBehaviour
             {
 
 
-                explode();
+                
 
                 controller.ChangeHealth(1);
 
@@ -44,8 +44,7 @@ public class HealthCollectible : MonoBehaviour
     }
     void explode()
     {
-        = Instantiate(healthEffect);
-        health = healthEffect.GetComponent<ParticleSystem>();
+        
 
     }
 }
