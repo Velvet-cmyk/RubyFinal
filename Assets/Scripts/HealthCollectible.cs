@@ -30,7 +30,7 @@ public class HealthCollectible : MonoBehaviour
 
 
 
-                health.Instantiate(healthEffect, transform.position, Quaternion.identity);
+                ParticleSystem.Instantiate(healthEffect, transform.position, Quaternion.identity);
                 health.Play();
 
                 controller.ChangeHealth(1);
