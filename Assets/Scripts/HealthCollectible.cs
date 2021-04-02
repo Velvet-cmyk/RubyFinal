@@ -20,7 +20,7 @@ public class HealthCollectible : MonoBehaviour
         {
             if (controller.currentHealth < controller.maxHealth)
             {
-                ParticleSystem healthEffect = GetComponent<ParticleSystem>();
+                
                 healthEffect.Play();
 
                 controller.ChangeHealth(1);
