@@ -26,6 +26,7 @@ public class HealthCollectible : MonoBehaviour
 
 
                 explode();
+                
                 controller.ChangeHealth(1);
 
                 controller.PlaySound(collectedClip);
