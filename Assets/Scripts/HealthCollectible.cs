@@ -37,7 +37,7 @@ public class HealthCollectible : MonoBehaviour
 
                 Destroy(gameObject);
 
-                health.Play();
+                
 
             }
 
