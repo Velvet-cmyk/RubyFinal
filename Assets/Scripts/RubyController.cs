@@ -118,6 +118,7 @@ public class RubyController : MonoBehaviour
         }
         if (amount > 0)
         {
+           healthEf
             Effect.Play();
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
