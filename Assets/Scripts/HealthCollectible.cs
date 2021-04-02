@@ -25,7 +25,7 @@ public class HealthCollectible : MonoBehaviour
             {
 
 
-                
+                t=Instantiate(healthEffect); 
 
                 controller.ChangeHealth(1);
 
