@@ -23,8 +23,7 @@ public class RubyController : MonoBehaviour
     public ParticleSystem healthEffect;
 
     public AudioClip hitClip;
-    public Text score;
-    private int scoreValue;
+    
 
 
     // Start is called before the first frame update
@@ -34,7 +33,7 @@ public class RubyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
-        scoreValue = 0;
+        
 
 
 
