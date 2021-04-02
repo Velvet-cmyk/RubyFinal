@@ -20,13 +20,14 @@ public class HealthCollectible : MonoBehaviour
         {
             if (controller.currentHealth < controller.maxHealth)
             {
+                Instantiate(healthEffect, new Vector3(0, 0, 0), Quaternion.identity);
                 controller.ChangeHealth(1);
 
                 controller.PlaySound(collectedClip);
 
                 Destroy(gameObject);
 
-                Instantiate(healthEffect, new Vector3(0, 0, 0), Quaternion.identity);
+
 
             }
 
