@@ -122,7 +122,7 @@ public class RubyController : MonoBehaviour
 
         if (amount > 0)
         {
-            ParticleSystem.Instantiate(healthEffect, new Vector3 (0,0,0),Quaternion.identity);
+            ParticleSystem.Instantiate(healthEffect, new Vector3(0, 0, 0), Quaternion.identity);
             Effect.Play();
         }
 
