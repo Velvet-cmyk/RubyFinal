@@ -20,7 +20,7 @@ public class RubyController : MonoBehaviour
     public GameObject projectilePrefab;
     AudioSource audioSource;
     public ParticleSystem healthEffect;
-    public AudioClip hitClip; 
+    public AudioClip hitClip;
 
 
     // Start is called before the first frame update
@@ -105,6 +105,7 @@ public class RubyController : MonoBehaviour
                 return;
             isInvincible = true;
             invincibleTimer = timeInvincible;
+            PlaySound(hitClip);
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
