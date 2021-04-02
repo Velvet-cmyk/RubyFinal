@@ -20,6 +20,7 @@ public class RubyController : MonoBehaviour
     public GameObject projectilePrefab;
     AudioSource audioSource;
     public ParticleSystem healthEffect;
+    public AudioClip hitClip; 
 
 
     // Start is called before the first frame update
