@@ -21,7 +21,8 @@ public class RubyController : MonoBehaviour
     public GameObject projectilePrefab;
     AudioSource audioSource;
     public GameObject healthEffect;
-   
+    public ParticleSystem Effect;
+
 
 
 
@@ -117,7 +118,7 @@ public class RubyController : MonoBehaviour
         }
         if (amount > 0)
         {
-             Instantiate(healthEffect);
+            Effect.Play();
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
