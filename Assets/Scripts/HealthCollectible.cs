@@ -23,7 +23,7 @@ public class HealthCollectible : MonoBehaviour
                 healthEffect.Play();
                 controller.ChangeHealth(1);
 
-                
+                controller.PlaySound(collectedClip);
 
                 Destroy(gameObject);
             }
