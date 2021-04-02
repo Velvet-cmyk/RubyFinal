@@ -7,7 +7,7 @@ public class HealthCollectible : MonoBehaviour
 {
     public AudioClip collectedClip;
 
-    public GameObject healthEffect;
+    public ParticleSystem healthEffect;
 
 
     void OnTriggerEnter2D(Collider2D other)
