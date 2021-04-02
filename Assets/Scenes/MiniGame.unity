@@ -1253,6 +1253,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectibleHealth
       objectReference: {fileID: 0}
+    - target: {fileID: 9031001851780400692, guid: d16ddddee1c390f4aabd500a12b26878,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d16ddddee1c390f4aabd500a12b26878, type: 3}
 --- !u!198 &641681052 stripped
@@ -1919,6 +1924,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CollectibleHealth (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031001851780400692, guid: d16ddddee1c390f4aabd500a12b26878,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d16ddddee1c390f4aabd500a12b26878, type: 3}
