@@ -282,7 +282,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthEffect
       value: 
-      objectReference: {fileID: 9163665541505940476, guid: 084f8f1719083df4abf0a96169d1fdd6,
+      objectReference: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6,
         type: 3}
     - target: {fileID: 7507693980744349886, guid: d16ddddee1c390f4aabd500a12b26878,
         type: 3}
@@ -1041,7 +1041,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthEffect
       value: 
-      objectReference: {fileID: 9163665541505940476, guid: 084f8f1719083df4abf0a96169d1fdd6,
+      objectReference: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6,
         type: 3}
     - target: {fileID: 7358231447619000591, guid: d16ddddee1c390f4aabd500a12b26878,
         type: 3}
@@ -1716,8 +1716,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthEffect
       value: 
-      objectReference: {fileID: 9163665541505940476, guid: 084f8f1719083df4abf0a96169d1fdd6,
-        type: 3}
+      objectReference: {fileID: 1832852600}
     - target: {fileID: 7507693980744349886, guid: d16ddddee1c390f4aabd500a12b26878,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2291,8 +2290,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthEffect
       value: 
-      objectReference: {fileID: 9163665541505940476, guid: 084f8f1719083df4abf0a96169d1fdd6,
-        type: 3}
+      objectReference: {fileID: 1361716231}
     - target: {fileID: 7358231447619000591, guid: d16ddddee1c390f4aabd500a12b26878,
         type: 3}
       propertyPath: cullingMode
@@ -2352,6 +2350,12 @@ MonoBehaviour:
   vertical: 1
   changeTime: 3
   smokeEffect: {fileID: 851180542}
+--- !u!198 &1361716231 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7358231447619000591, guid: d16ddddee1c390f4aabd500a12b26878,
+    type: 3}
+  m_PrefabInstance: {fileID: 861007391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1427824957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2669,6 +2673,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayTime: 4
   dialogBox: {fileID: 1944900409}
+--- !u!198 &1606417325 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7358231447619000591, guid: d16ddddee1c390f4aabd500a12b26878,
+    type: 3}
+  m_PrefabInstance: {fileID: 1234364158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1616392507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2982,6 +2992,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808735290}
   m_CullTransparentMesh: 0
+--- !u!198 &1832852600 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7358231447619000591, guid: d16ddddee1c390f4aabd500a12b26878,
+    type: 3}
+  m_PrefabInstance: {fileID: 489121955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1876412335 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2110241292801106367, guid: 1955564a4bf37da45b45a5324a74983a,
@@ -15078,8 +15094,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthEffect
       value: 
-      objectReference: {fileID: 9163665541505940476, guid: 084f8f1719083df4abf0a96169d1fdd6,
-        type: 3}
+      objectReference: {fileID: 1606417325}
     - target: {fileID: 7586626838303783771, guid: d16ddddee1c390f4aabd500a12b26878,
         type: 3}
       propertyPath: m_RootOrder

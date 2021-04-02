@@ -21,7 +21,7 @@ public class HealthCollectible : MonoBehaviour
             if (controller.currentHealth < controller.maxHealth)
             {
                 
-                healthEffect.Play();
+              
 
                 controller.ChangeHealth(1);
 
@@ -34,6 +34,7 @@ public class HealthCollectible : MonoBehaviour
             }
 
         }
+        if ()
 
     }
 }
