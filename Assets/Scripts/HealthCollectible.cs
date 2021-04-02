@@ -41,6 +41,6 @@ public class HealthCollectible : MonoBehaviour
     }
     void explode()
     {
-        GameObject
+        GameObject healthEffect=Instantiate(healthEffect, position, Quaternion.identity); 
     }
 }
