@@ -13,6 +13,7 @@ public class HealthCollectible : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         RubyController controller = other.GetComponent<RubyController>();
+        collider=GetComponent<Collider2D>(); 
 
 
         if (controller != null)
@@ -29,6 +30,6 @@ public class HealthCollectible : MonoBehaviour
             }
 
         }
-        if (controller.collider)
+        if (
     }
 }
