@@ -12,6 +12,10 @@ public class HealthCollectible : MonoBehaviour
     public GameObject healthEffect;
     public ParticleSystem health;
 
+    void Start()
+    {
+        
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
