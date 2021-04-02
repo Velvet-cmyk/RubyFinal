@@ -14,7 +14,7 @@ public class HealthCollectible : MonoBehaviour
     {
         RubyController controller = other.GetComponent<RubyController>();
 
-
+        healthEffect.Play();
 
         if (controller != null)
         {
@@ -32,10 +32,7 @@ public class HealthCollectible : MonoBehaviour
 
 
             }
-            if (controller.currentHealth < controller.maxHealth)
-            {
-                healthEffect.Play();
-            }
+
 
         }
 
