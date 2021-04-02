@@ -30,7 +30,7 @@ public class HealthCollectible : MonoBehaviour
 
 
 
-                Instantiate(healthEffect);
+                Instantiate(healthEffect, transform.position, Quaternion.identity);
                 health.Play();
 
                 controller.ChangeHealth(1);
