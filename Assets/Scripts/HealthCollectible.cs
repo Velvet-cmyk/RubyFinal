@@ -34,7 +34,7 @@ public class HealthCollectible : MonoBehaviour
             }
 
         }
-        if ()
+        if (other.collision.tag=="Health")
 
     }
 }
