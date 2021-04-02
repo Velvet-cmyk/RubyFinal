@@ -20,7 +20,7 @@ public class HealthCollectible : MonoBehaviour
             if (controller.currentHealth < controller.maxHealth)
             {
 
-                controller.healthEffect.Play();
+                healthEffect.Play();
                 controller.ChangeHealth(1);
 
                 controller.PlaySound(collectedClip);
