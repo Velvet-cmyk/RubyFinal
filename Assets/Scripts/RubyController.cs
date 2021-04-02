@@ -20,7 +20,7 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public GameObject projectilePrefab;
     AudioSource audioSource;
-    public GameObject healthEffect;
+    public static GameObject healthEffect;
     public ParticleSystem Effect;
 
 
@@ -122,7 +122,7 @@ public class RubyController : MonoBehaviour
 
         if (amount > 0)
         {
-            healthEffect.Instantiate(healthEffect ,Quaternion.identity );
+            healthEffect.Instantiate(healthEffect,  );
             Effect.Play();
         }
 
