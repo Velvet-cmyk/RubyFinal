@@ -6,7 +6,7 @@ public class HealthCollectible : MonoBehaviour
 
 {
     public AudioClip collectedClip;
-    public GameObject 
+    public GameObject healthEffect;
 
 
 
@@ -30,7 +30,7 @@ public class HealthCollectible : MonoBehaviour
 
 
 
-
+                Instantiate(healthEffect);
 
                 controller.ChangeHealth(1);
 
