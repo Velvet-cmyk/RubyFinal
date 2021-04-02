@@ -14,6 +14,7 @@ public class HardEnemyController : MonoBehaviour
     Animator anim;
     bool broken = true;
     public ParticleSystem smokeEffect;
+    public AudioClip hitClip; 
 
     // Start is called before the first frame update
     void Start()
