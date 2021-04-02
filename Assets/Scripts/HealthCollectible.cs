@@ -6,7 +6,7 @@ public class HealthCollectible : MonoBehaviour
 
 {
     public AudioClip collectedClip;
-    public ParticleSystem healthEffect;
+    public GameObject 
 
 
 
@@ -25,7 +25,7 @@ public class HealthCollectible : MonoBehaviour
                 controller.PlaySound(collectedClip);
 
                 Destroy(gameObject);
-                healthEffect.Play();
+                
 
 
             }
