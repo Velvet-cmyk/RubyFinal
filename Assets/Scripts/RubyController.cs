@@ -130,7 +130,9 @@ public class RubyController : MonoBehaviour
         
         anim.SetTrigger("Launch");
 
-        
+
     }
+    void OnCollisionEnter2D(Collision2D collision) 
+
 
 }
