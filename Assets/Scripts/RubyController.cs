@@ -19,8 +19,9 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public GameObject projectilePrefab;
     AudioSource audioSource;
+    ParticleSystem healthEffect;
 
-   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +29,8 @@ public class RubyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
-        
+        healthEffect = GetComponent<ParticleSystem>();
+
 
 
 
@@ -39,7 +41,7 @@ public class RubyController : MonoBehaviour
 
     }
 
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -106,6 +108,10 @@ public class RubyController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
 
+        if (amount > 0)
+        {
+            healthEffect.Play();
+        }
     }
 
     void Launch()
