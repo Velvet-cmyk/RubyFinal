@@ -14,7 +14,7 @@ public class HealthCollectible : MonoBehaviour
 
     void Start()
     {
-        
+        health.SetActive(true); 
     }
 
     void OnTriggerEnter2D(Collider2D other)
