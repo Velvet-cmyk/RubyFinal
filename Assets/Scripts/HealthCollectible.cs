@@ -20,7 +20,7 @@ public class HealthCollectible : MonoBehaviour
         {
             if (controller.currentHealth < controller.maxHealth)
             {
-                trig.Find("Health").GetComponent<ParticleSystem>().Play(); 
+                other.Find("Health").GetComponent<ParticleSystem>().Play(); 
 
                 controller.ChangeHealth(1);
 
