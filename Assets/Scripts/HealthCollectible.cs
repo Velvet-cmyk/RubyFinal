@@ -12,6 +12,7 @@ public class HealthCollectible : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         RubyController controller = other.GetComponent<RubyController>();
+        healthEffect.Play();
 
         if (controller != null)
         {
@@ -22,7 +23,7 @@ public class HealthCollectible : MonoBehaviour
                 Destroy(gameObject);
                 controller.PlaySound(collectedClip);
 
-               
+
 
 
 
