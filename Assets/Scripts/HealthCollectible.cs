@@ -18,11 +18,14 @@ public class HealthCollectible : MonoBehaviour
         {
             if (controller.currentHealth < controller.maxHealth)
             {
+                healthEffect.Play();
+
+                controller.PlaySound(collectedClip);
 
                 controller.ChangeHealth(1);
-                controller.PlaySound(collectedClip);
+
                 Destroy(gameObject);
-                healthEffect.Play();
+
 
 
 
