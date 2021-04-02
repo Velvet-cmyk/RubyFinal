@@ -38,5 +38,8 @@ public class HealthCollectible : MonoBehaviour
 
 
     }
-    void 
+    void explode()
+    {
+        
+    }
 }
