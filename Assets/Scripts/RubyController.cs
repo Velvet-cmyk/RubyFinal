@@ -110,7 +110,7 @@ public class RubyController : MonoBehaviour
 
         if (amount > 0)
         {
-            healthEffect.Play();
+            ParticleSystem =Instantiate(healthEffect)
         }
     }
 
