@@ -9,7 +9,7 @@ public class HealthCollectible : MonoBehaviour
 
 
 
-    public GameObject healthEffect;
+
 
 
 
@@ -46,9 +46,5 @@ public class HealthCollectible : MonoBehaviour
 
 
     }
-    void explode()
-    {
 
-
-    }
 }
