@@ -9,14 +9,14 @@ public class HealthCollectible : MonoBehaviour
 
     
 
-     GameObject healthEffect;
+     public GameObject healthEffect;
     public ParticleSystem health;
 
 
     void OnTriggerEnter2D(Collider2D other)
     {
         RubyController controller = other.GetComponent<RubyController>();
-        healthEffect=Resources.
+        
 
 
 
