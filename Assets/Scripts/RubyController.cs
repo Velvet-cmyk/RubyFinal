@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; 
 
 public class RubyController : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class RubyController : MonoBehaviour
     public ParticleSystem healthEffect; 
     
     public AudioClip hitClip;
+    public Text score; 
 
 
     // Start is called before the first frame update
