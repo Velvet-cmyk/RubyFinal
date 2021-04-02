@@ -11,6 +11,11 @@ public class HealthCollectible : MonoBehaviour
 
     public GameObject healthEffect;
     public ParticleSystem health;
+    
+    void Start(); 
+    {
+
+    }
 
 
 
