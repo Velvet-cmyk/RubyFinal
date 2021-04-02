@@ -11,11 +11,7 @@ public class HealthCollectible : MonoBehaviour
 
     public GameObject healthEffect;
     public ParticleSystem health;
-    
-    void Start(); 
-    {
 
-    }
 
 
 
@@ -23,7 +19,7 @@ public class HealthCollectible : MonoBehaviour
     {
         RubyController controller = other.GetComponent<RubyController>();
 
-
+        healthEffect.SetActive(false);
 
 
         if (controller != null)
