@@ -126,6 +126,7 @@ MonoBehaviour:
     type: 3}
   healthEffect: {fileID: 9163665541505940476, guid: 084f8f1719083df4abf0a96169d1fdd6,
     type: 3}
+  Effect: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6, type: 3}
   hitClip: {fileID: 0}
 --- !u!61 &3363495097845214465
 BoxCollider2D:
