@@ -97,7 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectedClip: {fileID: 8300000, guid: 00a3804f57ea365489dce7b904ab63fc, type: 3}
-  healthEffect: {fileID: 7358231447619000591}
+  effect: {fileID: 9163665541505940476, guid: 084f8f1719083df4abf0a96169d1fdd6, type: 3}
+  health: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6, type: 3}
 --- !u!61 &3163885879167092223
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -196,12 +197,6 @@ PrefabInstance:
 --- !u!4 &7586626838303783771 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7996066413509007587, guid: 084f8f1719083df4abf0a96169d1fdd6,
-    type: 3}
-  m_PrefabInstance: {fileID: 558060288531260344}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &7358231447619000591 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6,
     type: 3}
   m_PrefabInstance: {fileID: 558060288531260344}
   m_PrefabAsset: {fileID: 0}
