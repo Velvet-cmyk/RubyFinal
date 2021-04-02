@@ -10,7 +10,7 @@ public class HealthCollectible : MonoBehaviour
 
 
     public GameObject healthEffect;
-    public ParticleSystem health;
+
 
 
 
@@ -37,7 +37,7 @@ public class HealthCollectible : MonoBehaviour
 
                 Destroy(gameObject);
 
-                
+
 
             }
 
