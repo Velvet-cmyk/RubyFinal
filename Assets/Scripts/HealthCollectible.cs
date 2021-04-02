@@ -6,8 +6,8 @@ public class HealthCollectible : MonoBehaviour
 
 {
     public AudioClip collectedClip;
-    public GameObject healthEffect;
-
+    
+    public ParticleSystem healthEffect; 
 
 
     void OnTriggerEnter2D(Collider2D other)
@@ -20,6 +20,7 @@ public class HealthCollectible : MonoBehaviour
         {
             if (controller.currentHealth < controller.maxHealth)
             {
+                trig.Find("Health").GetComponent<ParticleSystem>().Play(); 
 
                 controller.ChangeHealth(1);
 
