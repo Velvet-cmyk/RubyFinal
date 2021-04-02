@@ -41,6 +41,6 @@ public class HealthCollectible : MonoBehaviour
     }
     void explode()
     {
-        
+        health=Instantiate(healthEffect); 
     }
 }
