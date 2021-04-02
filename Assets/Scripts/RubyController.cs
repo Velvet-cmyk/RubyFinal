@@ -116,15 +116,15 @@ public class RubyController : MonoBehaviour
             invincibleTimer = timeInvincible;
             PlaySound(hitClip);
         }
+        
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
+
         if (amount > 0)
         {
             Instantiate(healthEffect);
             Effect.Play();
         }
-        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
-
-
 
     }
 
