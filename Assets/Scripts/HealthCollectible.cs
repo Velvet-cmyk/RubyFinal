@@ -19,6 +19,7 @@ public class HealthCollectible : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         RubyController controller = other.GetComponent<RubyController>();
+        health.GetComponent<ParticleSystem>();
 
 
 
@@ -31,7 +32,8 @@ public class HealthCollectible : MonoBehaviour
 
 
                 ParticleSystem.Instantiate(healthEffect, transform.position, Quaternion.identity);
-                health.GetComponent<ParticleSystem>().Play();
+                health.Play();
+
 
                 controller.ChangeHealth(1);
 
