@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
 public class RubyController : MonoBehaviour
 {
@@ -20,11 +20,11 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public GameObject projectilePrefab;
     AudioSource audioSource;
-    public ParticleSystem healthEffect; 
-    
+    public ParticleSystem healthEffect;
+
     public AudioClip hitClip;
-    public Text score; 
-    private int scoreValue; 
+    public Text score;
+    private int scoreValue;
 
 
     // Start is called before the first frame update
@@ -34,13 +34,13 @@ public class RubyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
-         scoreValue=0; 
+        scoreValue = 0;
 
 
 
 
     }
-   
+
     public void PlaySound(AudioClip clip)
     {
         audioSource.PlayOneShot(clip);
@@ -114,12 +114,12 @@ public class RubyController : MonoBehaviour
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
-        
-        if (amount>0)
+
+        if (amount > 0)
         {
-            healthEffect.Play(); 
+            healthEffect.Play();
         }
-        
+
     }
 
     void Launch()
@@ -127,7 +127,7 @@ public class RubyController : MonoBehaviour
         GameObject projectileObject = Instantiate(projectilePrefab, rb.position + Vector2.up * 0.5f, Quaternion.identity);
         Projectile projectile = projectileObject.GetComponent<Projectile>();
         projectile.Launch(lookDirection, 300);
-
+        score.text = "Score:" + scoreValue.ToString();
         anim.SetTrigger("Launch");
     }
 
