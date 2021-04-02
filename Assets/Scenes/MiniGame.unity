@@ -14364,18 +14364,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectibleHealth (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 6161365162805104444, guid: d16ddddee1c390f4aabd500a12b26878,
-        type: 3}
-      propertyPath: effect
-      value: 
-      objectReference: {fileID: 9163665541505940476, guid: 084f8f1719083df4abf0a96169d1fdd6,
-        type: 3}
-    - target: {fileID: 6161365162805104444, guid: d16ddddee1c390f4aabd500a12b26878,
-        type: 3}
-      propertyPath: health
-      value: 
-      objectReference: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d16ddddee1c390f4aabd500a12b26878, type: 3}
 --- !u!1 &2132373647
