@@ -20,7 +20,7 @@ public class HealthCollectible : MonoBehaviour
         {
             if (controller.currentHealth < controller.maxHealth)
             {
-               Instantiate(healthEffect)
+               
 
                 controller.ChangeHealth(1);
 
