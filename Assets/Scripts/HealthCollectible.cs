@@ -7,7 +7,7 @@ public class HealthCollectible : MonoBehaviour
 {
     public AudioClip collectedClip;
 
-    public Object effect;
+    
 
      GameObject healthEffect;
     public ParticleSystem health;
