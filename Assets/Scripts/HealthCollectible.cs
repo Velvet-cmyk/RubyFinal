@@ -14,7 +14,7 @@ public class HealthCollectible : MonoBehaviour
 
     void Start()
     {
-        health.SetActive(true); 
+        healthEffect.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -31,7 +31,7 @@ public class HealthCollectible : MonoBehaviour
 
 
                 healthEffect = Instantiate(healthEffect);
-                health.Play();
+                healthEffect.SetActive(true);
 
                 controller.ChangeHealth(1);
 
