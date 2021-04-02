@@ -19,7 +19,7 @@ public class HealthCollectible : MonoBehaviour
     {
         RubyController controller = other.GetComponent<RubyController>();
 
-        healthEffect.SetActive(false);
+
 
 
         if (controller != null)
@@ -29,7 +29,7 @@ public class HealthCollectible : MonoBehaviour
 
 
 
-                healthEffect.SetActive(true);
+
 
                 controller.ChangeHealth(1);
 
@@ -37,7 +37,7 @@ public class HealthCollectible : MonoBehaviour
 
                 Destroy(gameObject);
 
-
+                health.Play();
 
             }
 
