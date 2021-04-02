@@ -7,6 +7,8 @@ public class HealthCollectible : MonoBehaviour
 {
     public AudioClip collectedClip;
 
+    public Object effect; 
+
     public GameObject healthEffect;
     public ParticleSystem health; 
 
@@ -41,6 +43,6 @@ public class HealthCollectible : MonoBehaviour
     }
     void explode()
     {
-        GameObject healthEffect=Instantiate(healthEffect, position, Quaternion.identity); 
+         
     }
 }
