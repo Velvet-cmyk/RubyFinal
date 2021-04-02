@@ -116,7 +116,7 @@ public class RubyController : MonoBehaviour
         }
         if(amount>0)
         {
-            GameObject healthEffect=Instantiate(healthEffectprefab);
+            GameObject healthEffect=Instantiate();
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
