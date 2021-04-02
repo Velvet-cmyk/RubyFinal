@@ -34,7 +34,7 @@ public class HealthCollectible : MonoBehaviour
             }
 
         }
-        if (Collision.gameObject.tag = "Health")
+        if (Collision.gameObject.tag == "Health")
         {
 
         }
