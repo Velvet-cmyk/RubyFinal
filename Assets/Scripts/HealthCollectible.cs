@@ -14,14 +14,14 @@ public class HealthCollectible : MonoBehaviour
     {
         RubyController controller = other.GetComponent<RubyController>();
 
-        
+
 
         if (controller != null)
         {
             if (controller.currentHealth < controller.maxHealth)
             {
 
-                controller.healthEffect.Play(); 
+                healthEffect.Play();
 
                 controller.ChangeHealth(1);
 
