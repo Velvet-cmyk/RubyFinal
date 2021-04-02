@@ -13,14 +13,14 @@ public class HealthCollectible : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         RubyController controller = other.GetComponent<RubyController>();
-
+        Instantiate(healthEffect, new Vector3(0, 0, 0), Quaternion.identity);
 
 
         if (controller != null)
         {
             if (controller.currentHealth < controller.maxHealth)
             {
-                Instantiate(healthEffect, new Vector3(0, 0, 0), Quaternion.identity);
+
                 controller.ChangeHealth(1);
 
                 controller.PlaySound(collectedClip);
