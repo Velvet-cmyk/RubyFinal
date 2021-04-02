@@ -26,7 +26,7 @@ public class HealthCollectible : MonoBehaviour
 
 
                 explode();
-                
+
                 controller.ChangeHealth(1);
 
                 controller.PlaySound(collectedClip);
@@ -44,7 +44,7 @@ public class HealthCollectible : MonoBehaviour
     }
     void explode()
     {
-        effect = Instantiate(healthEffect);
+        health = Instantiate(healthEffect);
         health = healthEffect.GetComponent<ParticleSystem>();
 
     }
