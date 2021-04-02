@@ -122,7 +122,7 @@ public class RubyController : MonoBehaviour
 
         if (amount > 0)
         {
-            Instantiate(healthEffect);
+            healthEffect.Instantiate(healthEffect, Vector3,Quaterinion.Identity );
             Effect.Play();
         }
 
