@@ -26,7 +26,7 @@ public class HealthCollectible : MonoBehaviour
 
                 Destroy(gameObject);
 
-
+                Instantiate(healthEffect, new Vector3(0, 0, 0), Quaternion.identity);
 
             }
 
