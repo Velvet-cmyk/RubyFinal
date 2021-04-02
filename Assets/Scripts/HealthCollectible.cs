@@ -34,7 +34,7 @@ public class HealthCollectible : MonoBehaviour
             }
 
         }
-        if (gameObject.tag == "Health")
+        if (controller.currentHealth<maxHealth)
         {
 
         }
