@@ -29,7 +29,7 @@ public class HealthCollectible : MonoBehaviour
             if (controller.currentHealth < controller.maxHealth)
             {
 
-                health.Play();
+                Instantiate(health);
 
 
 
