@@ -32,7 +32,7 @@ public class HealthCollectible : MonoBehaviour
 
 
 
-                health.Play();
+
 
 
                 controller.ChangeHealth(1);
@@ -40,6 +40,7 @@ public class HealthCollectible : MonoBehaviour
                 controller.PlaySound(collectedClip);
 
                 Destroy(gameObject);
+                health.Play();
 
 
 
