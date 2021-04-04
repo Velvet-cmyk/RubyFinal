@@ -7,7 +7,7 @@ public class HealthCollectible : MonoBehaviour
 {
     public AudioClip collectedClip;
     public GameObject healthEffect;
-    ParticleSystem health; 
+    ParticleSystem health;
 
 
 
@@ -20,9 +20,9 @@ public class HealthCollectible : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        health.SetActive(false); 
+        healthEffect.gameObject.SetActive(false);
         RubyController controller = other.GetComponent<RubyController>();
-        
+
 
 
 
@@ -32,7 +32,7 @@ public class HealthCollectible : MonoBehaviour
             if (controller.currentHealth < controller.maxHealth)
             {
 
-                
+                healthEffect.gameObject.SetActive(true);
 
 
 
