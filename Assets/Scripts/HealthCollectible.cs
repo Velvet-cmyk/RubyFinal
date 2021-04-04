@@ -7,6 +7,7 @@ public class HealthCollectible : MonoBehaviour
 {
     public AudioClip collectedClip;
     public GameObject healthEffect;
+    ParticleSystem health;
 
 
 
@@ -29,7 +30,7 @@ public class HealthCollectible : MonoBehaviour
             if (controller.currentHealth < controller.maxHealth)
             {
 
-                Instantiate(healthEffect, transform.position, Quaternion.identity);
+                health.GetComponent<ParticleSystem>().Play();
 
 
 
