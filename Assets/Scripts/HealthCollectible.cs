@@ -20,7 +20,7 @@ public class HealthCollectible : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        healthEffect.gameObject.SetActive(false);
+        
         RubyController controller = other.GetComponent<RubyController>();
 
 
@@ -31,8 +31,8 @@ public class HealthCollectible : MonoBehaviour
         {
             if (controller.currentHealth < controller.maxHealth)
             {
-
-                healthEffect.gameObject.SetActive(true);
+                health.Play(); 
+                
 
 
 
