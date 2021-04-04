@@ -7,6 +7,7 @@ public class HealthCollectible : MonoBehaviour
 {
     public AudioClip collectedClip;
     public GameObject healthEffect;
+    ParticleSystem health; 
 
 
 
@@ -19,6 +20,7 @@ public class HealthCollectible : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        health.SetActive(false); 
         RubyController controller = other.GetComponent<RubyController>();
         
 
