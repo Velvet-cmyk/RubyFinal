@@ -29,7 +29,7 @@ public class HealthCollectible : MonoBehaviour
             if (controller.currentHealth < controller.maxHealth)
             {
 
-                Instantiate(healthEffect);
+                Instantiate(healthEffect, transform.position, Quaternion.identity);
 
 
 
