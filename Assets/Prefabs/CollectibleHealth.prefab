@@ -97,8 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectedClip: {fileID: 8300000, guid: 00a3804f57ea365489dce7b904ab63fc, type: 3}
-  healthEffect: {fileID: 9163665541505940476, guid: 084f8f1719083df4abf0a96169d1fdd6,
-    type: 3}
+  healthEffect: {fileID: 7601789768320512747}
   health: {fileID: 7695580869055114925, guid: 985e369b9a4f47f40b8bc79603bad993, type: 3}
 --- !u!61 &3163885879167092223
 BoxCollider2D:
@@ -195,6 +194,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 084f8f1719083df4abf0a96169d1fdd6, type: 3}
+--- !u!1 &7601789768320512747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9163665541505940476, guid: 084f8f1719083df4abf0a96169d1fdd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1609221883520321815}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8692693639532466676 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7996066413509007587, guid: 084f8f1719083df4abf0a96169d1fdd6,
