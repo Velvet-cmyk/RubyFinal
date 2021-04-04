@@ -31,7 +31,7 @@ public class HealthCollectible : MonoBehaviour
         {
             if (controller.currentHealth < controller.maxHealth)
             {
-                GameObject healthEffectObject = Instantiate(healthEffect, transform.position,  Quaternion.identity);
+                health.GetComponent<ParticleSystem>().Play();
 
 
 
