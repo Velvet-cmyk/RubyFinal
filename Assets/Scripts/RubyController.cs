@@ -20,7 +20,7 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public GameObject projectilePrefab;
     AudioSource audioSource;
-    public static GameObject healthEffect;
+    
     public ParticleSystem Effect;
 
 
