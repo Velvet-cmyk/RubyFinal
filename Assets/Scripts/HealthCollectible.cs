@@ -29,7 +29,7 @@ public class HealthCollectible : MonoBehaviour
             if (controller.currentHealth < controller.maxHealth)
             {
 
-
+                health.Play();
 
 
 
@@ -40,7 +40,7 @@ public class HealthCollectible : MonoBehaviour
                 controller.PlaySound(collectedClip);
 
                 Destroy(gameObject);
-                health.Play();
+
 
 
 
