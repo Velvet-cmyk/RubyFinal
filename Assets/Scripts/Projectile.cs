@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
 public class Projectile : MonoBehaviour
 {
     Rigidbody2D rb;
-    public Text fixedBot; 
-    private int bots; 
-    
+    public Text fixedBot;
+    private int bots;
+
+    void Start()
+    {
+
+    }
 
     // Start is called before the first frame update
     void Awake()
