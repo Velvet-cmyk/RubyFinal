@@ -31,6 +31,7 @@ public class Projectile : MonoBehaviour
         if (e != null)
         {
             e.Fix();
+            
         }
 
 
