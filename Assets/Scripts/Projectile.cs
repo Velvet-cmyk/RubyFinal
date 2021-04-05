@@ -6,13 +6,8 @@ using UnityEngine.UI;
 public class Projectile : MonoBehaviour
 {
     Rigidbody2D rb;
-    public Text fixedBot;
-    private int bots;
 
-    void Start()
-    {
-        fixedBot.text = "Fixed" + 0;
-    }
+
 
     // Start is called before the first frame update
     void Awake()
@@ -31,7 +26,7 @@ public class Projectile : MonoBehaviour
         if (e != null)
         {
             e.Fix();
-            bots += 1;
+
         }
 
 
@@ -42,7 +37,7 @@ public class Projectile : MonoBehaviour
         if (f != null)
         {
             f.Fix();
-            bots += 1;
+
         }
 
 
