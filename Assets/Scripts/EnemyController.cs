@@ -88,6 +88,11 @@ public class EnemyController : MonoBehaviour
         anim.SetTrigger("Fixed");
         smokeEffect.Stop();
 
+        if(broken==false)
+        {
+            SetCountText(); 
+        }
+
     }
     void SetCountText()
     {
