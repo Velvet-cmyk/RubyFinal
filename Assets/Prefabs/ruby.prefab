@@ -124,9 +124,7 @@ MonoBehaviour:
   timeInvincible: 2
   projectilePrefab: {fileID: 5842185214771222816, guid: dfa42da02a2a7a14a839ae1db98652e2,
     type: 3}
-  healthEffect: {fileID: 9163665541505940476, guid: 084f8f1719083df4abf0a96169d1fdd6,
-    type: 3}
-  Effect: {fileID: 7035485065494149815, guid: 084f8f1719083df4abf0a96169d1fdd6, type: 3}
+  Effect: {fileID: 5869851300147101513, guid: ff800ed1549a4ae4db545c9ab942fd10, type: 3}
   hitClip: {fileID: 0}
 --- !u!61 &3363495097845214465
 BoxCollider2D:
