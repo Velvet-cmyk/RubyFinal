@@ -21,6 +21,7 @@ public class RubyController : MonoBehaviour
     public GameObject projectilePrefab;
     AudioSource audioSource;
     public Text countText; 
+    private int fixedBot; 
 
     public ParticleSystem Effect = null;
 
@@ -141,7 +142,10 @@ public class RubyController : MonoBehaviour
     void SetCountText()
     {
         countText.text="count"+ToString(); 
-        if(countText>)
+        if(countText=>6)
+        {
+
+        }
     }
 
 
