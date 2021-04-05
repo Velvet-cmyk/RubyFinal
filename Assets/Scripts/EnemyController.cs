@@ -23,6 +23,9 @@ public class EnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
         anim = GetComponent<Animator>();
+        fixedBot=0;
+        SetCountText(); 
+
     }
     //this function is called once per frame
     void Update()
