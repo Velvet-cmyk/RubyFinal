@@ -88,7 +88,7 @@ public class EnemyController : MonoBehaviour
         anim.SetTrigger("Fixed");
         smokeEffect.Stop();
 
-        if (broken =false)
+        if (broken ==false)
         {
             fixedBot = fixedBot + 1;
             SetCountText();
