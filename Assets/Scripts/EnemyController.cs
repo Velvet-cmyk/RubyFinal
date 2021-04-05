@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; 
 
 public class EnemyController : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class EnemyController : MonoBehaviour
     Animator anim;
     bool broken = true;
     public ParticleSystem smokeEffect;
+    public Text countText; 
+    public int fixedBot; 
 
     // Start is called before the first frame update
     void Start()
@@ -83,4 +86,13 @@ public class EnemyController : MonoBehaviour
         smokeEffect.Stop();
 
     }
+    void SetCountText()
+    {
+        countText.text = "Fixed" + ToString();
+        if (fixedBot >= 6)
+        {
+
+        }
+    }
+
 }
