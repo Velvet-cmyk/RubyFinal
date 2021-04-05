@@ -21,7 +21,7 @@ public class RubyController : MonoBehaviour
     public GameObject projectilePrefab;
     AudioSource audioSource;
     
-    public ParticleSystem Effect;
+    public ParticleSystem Effect=null;
 
 
 
