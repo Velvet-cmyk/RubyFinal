@@ -20,8 +20,8 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public GameObject projectilePrefab;
     AudioSource audioSource;
-    
-    public ParticleSystem Effect=null;
+
+    public ParticleSystem Effect = null;
 
 
 
@@ -115,6 +115,7 @@ public class RubyController : MonoBehaviour
             isInvincible = true;
             invincibleTimer = timeInvincible;
             PlaySound(hitClip);
+            Instantiate(Effect, transform.position, Quaternion.identity);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
