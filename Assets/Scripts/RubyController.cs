@@ -138,6 +138,10 @@ public class RubyController : MonoBehaviour
 
 
     }
+    void SetCountText()
+    {
+        
+    }
 
 
 
