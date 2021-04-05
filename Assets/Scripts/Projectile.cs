@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
 
     void Start()
     {
-        fixedBot.text="Fixed"+0; 
+        fixedBot.text = "Fixed" + 0;
     }
 
     // Start is called before the first frame update
@@ -31,7 +31,7 @@ public class Projectile : MonoBehaviour
         if (e != null)
         {
             e.Fix();
-            
+            bots += 1;
         }
 
 
@@ -42,6 +42,7 @@ public class Projectile : MonoBehaviour
         if (f != null)
         {
             f.Fix();
+            bots += 1;
         }
 
 
