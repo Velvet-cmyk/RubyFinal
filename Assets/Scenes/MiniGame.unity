@@ -932,6 +932,8 @@ MonoBehaviour:
   vertical: 0
   changeTime: 3
   smokeEffect: {fileID: 88217691}
+  countText: {fileID: 1808735292}
+  fixedBot: 0
 --- !u!1 &496709855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,6 +1188,8 @@ MonoBehaviour:
   vertical: 1
   changeTime: 3
   smokeEffect: {fileID: 641681052}
+  countText: {fileID: 0}
+  fixedBot: 0
 --- !u!1001 &636090656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1357,6 +1361,8 @@ MonoBehaviour:
   vertical: 0
   changeTime: 3
   smokeEffect: {fileID: 819525335}
+  countText: {fileID: 0}
+  fixedBot: 0
 --- !u!1 &758312650
 GameObject:
   m_ObjectHideFlags: 3
@@ -2099,6 +2105,8 @@ MonoBehaviour:
   vertical: 1
   changeTime: 3
   smokeEffect: {fileID: 851180542}
+  countText: {fileID: 0}
+  fixedBot: 0
 --- !u!1001 &1427824957
 PrefabInstance:
   m_ObjectHideFlags: 0
