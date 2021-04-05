@@ -20,6 +20,7 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public GameObject projectilePrefab;
     AudioSource audioSource;
+    public Text countText; 
 
     public ParticleSystem Effect = null;
 
@@ -38,6 +39,7 @@ public class RubyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
+        
 
 
 
