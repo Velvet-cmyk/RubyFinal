@@ -151,7 +151,8 @@ MonoBehaviour:
   vertical: 0
   changeTime: 3
   smokeEffect: {fileID: 7459198034362248975}
-  countText: {fileID: 0}
+  countText: {fileID: 5207477099924859670, guid: 406fde85468a43c4385fbef6b1d1eee2,
+    type: 3}
   fixedBot: 0
 --- !u!95 &9151853753570236528
 Animator:
