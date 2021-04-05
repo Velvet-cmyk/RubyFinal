@@ -90,6 +90,7 @@ public class EnemyController : MonoBehaviour
 
         if(broken==false)
         {
+            fixedBot=
             SetCountText(); 
         }
 
