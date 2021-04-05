@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
 
     void Start()
     {
-        bots=0; 
+        fixedBot
     }
 
     // Start is called before the first frame update
