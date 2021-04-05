@@ -141,7 +141,7 @@ public class RubyController : MonoBehaviour
     void SetCountText()
     {
         countText.text="count"+ToString(); 
-        
+        if(countText>)
     }
 
 
