@@ -139,7 +139,12 @@ public class RubyController : MonoBehaviour
 
 
     }
-    
+    void Awake()
+    {
+        EnemyController enemy =gameObject.GetComponent<EnemyController>(); 
+
+        if
+    }
     
 
 
