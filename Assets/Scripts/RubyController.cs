@@ -143,7 +143,7 @@ public class RubyController : MonoBehaviour
     {
         EnemyController enemy =gameObject.GetComponent<EnemyController>(); 
 
-        if
+        if (enemy.broken)
     }
     
 
