@@ -85,6 +85,10 @@ public class HardEnemyController : MonoBehaviour
         smokeEffect.Stop();
 
     }
+    void Awake()
+    {
+        
+    }
 }
 
 
