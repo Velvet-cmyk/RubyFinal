@@ -20,8 +20,8 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public GameObject projectilePrefab;
     AudioSource audioSource;
-    public Text countText; 
-    private int fixedBot; 
+    public Text countText;
+    private int fixedBot;
 
     public ParticleSystem Effect = null;
 
@@ -40,7 +40,7 @@ public class RubyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
-       
+
 
 
 
@@ -141,11 +141,14 @@ public class RubyController : MonoBehaviour
     }
     void Awake()
     {
-        EnemyController enemy =gameObject.GetComponent<EnemyController>(); 
+        EnemyController enemy = gameObject.GetComponent<EnemyController>();
 
-        if (enemy.broken)
+        if (enemy.broken = false)
+        {
+
+        }
     }
-    
+
 
 
 }
