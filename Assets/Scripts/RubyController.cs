@@ -143,10 +143,7 @@ public class RubyController : MonoBehaviour
     {
         Projectile g = gameObject.GetComponent<Projectile>();
 
-        if (g="fixed)") 
-        {
-            f
-        }
+        
 
     }
 
