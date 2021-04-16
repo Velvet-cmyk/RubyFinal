@@ -40,8 +40,8 @@ public class RubyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
-        fixedBot=0; 
-        countText.text="Fixed:" + countText.ToString(); 
+        fixedBot = 0;
+        countText.text = "Fixed:" + countText.ToString();
 
 
 
@@ -145,7 +145,9 @@ public class RubyController : MonoBehaviour
     {
         Projectile g = other.GetComponent<Projectile>();
 
-        countText.text = "Fixed:" + countText.ToString(); 
+        fixedBot = fixedBot + 1;
+
+        countText.text = "Fixed:" + countText.ToString();
 
 
 
