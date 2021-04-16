@@ -141,11 +141,11 @@ public class RubyController : MonoBehaviour
 
 
     }
-    void OnCollisionEnter2D()
+    void OnCollisionEnter2D(Collider2D other)
     {
-        Projectile g = gameObject.GetComponent<Projectile>();
+        Projectile g = other.GetComponent<Projectile>();
 
-        if ( )
+        
 
         
 
