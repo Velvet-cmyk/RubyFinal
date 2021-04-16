@@ -41,6 +41,7 @@ public class RubyController : MonoBehaviour
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
         fixedBot=0; 
+        Text= ""
 
 
 
