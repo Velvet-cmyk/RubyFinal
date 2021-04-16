@@ -145,9 +145,9 @@ public class RubyController : MonoBehaviour
     {
         Projectile g = other.GetComponent<Projectile>();
 
-        
+        countText.text = "Fixed:" + countText.ToString(); 
 
-        
+
 
     }
 
