@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class EnemyController : MonoBehaviour
@@ -12,12 +13,12 @@ public class EnemyController : MonoBehaviour
     float timer;
     int direction = 1;
     Animator anim;
-    bool broken =true;
+    bool broken = true;
     public ParticleSystem smokeEffect;
     public Text countText;
     private int fixedBot;
-    
-    
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class EnemyController : MonoBehaviour
         anim = GetComponent<Animator>();
         fixedBot = 0;
         countText.text = "Fixed:" + countText.ToString();
-        
+
 
     }
     //this function is called once per frame
@@ -90,10 +91,12 @@ public class EnemyController : MonoBehaviour
 
         anim.SetTrigger("Fixed");
         smokeEffect.Stop();
-        
-        
+        fixedBot = +1;
+        countText.text = "Fixed:" + countText.ToString();
+
+
 
     }
-    
+
 
 }
