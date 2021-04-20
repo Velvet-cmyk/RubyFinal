@@ -90,7 +90,7 @@ public class EnemyController : MonoBehaviour
 
         anim.SetTrigger("Fixed");
         smokeEffect.Stop();
-
+        
         
 
     }
