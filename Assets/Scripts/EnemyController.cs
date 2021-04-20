@@ -14,8 +14,8 @@ public class EnemyController : MonoBehaviour
     int direction = 1;
     Animator anim;
     bool broken = true;
-    public ParticleSystem smokeEffect;
-    
+    public ParticleSystem smokeEffect = null;
+
     public Text countText;
     private int fixedBot;
 
