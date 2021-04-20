@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 
 public class EnemyController : MonoBehaviour
@@ -14,9 +14,9 @@ public class EnemyController : MonoBehaviour
     int direction = 1;
     Animator anim;
     bool broken = true;
-    public ParticleSystem smokeEffect = null;
+    public ParticleSystem smokeEffect;
 
-    
+
 
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class EnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
         anim = GetComponent<Animator>();
-      
+
 
 
     }
@@ -89,7 +89,7 @@ public class EnemyController : MonoBehaviour
 
         anim.SetTrigger("Fixed");
         smokeEffect.Stop();
-        
+
 
 
     }
