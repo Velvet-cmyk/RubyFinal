@@ -16,9 +16,7 @@ public class EnemyController : MonoBehaviour
     bool broken = true;
     public ParticleSystem smokeEffect = null;
 
-    public Text countText;
-    private int fixedBot;
-
+    
 
 
     // Start is called before the first frame update
@@ -27,8 +25,7 @@ public class EnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
         anim = GetComponent<Animator>();
-        fixedBot = 0;
-        countText.text = "Fixed:" + countText.ToString();
+      
 
 
     }
@@ -92,9 +89,7 @@ public class EnemyController : MonoBehaviour
 
         anim.SetTrigger("Fixed");
         smokeEffect.Stop();
-        fixedBot = +1;
-        countText.text = "Fixed:" + countText.ToString();
-
+        
 
 
     }
