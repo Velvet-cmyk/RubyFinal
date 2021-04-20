@@ -20,8 +20,7 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public GameObject projectilePrefab;
     AudioSource audioSource;
-    public Text countText;
-    private int fixedBot;
+   
 
     public ParticleSystem Effect = null;
 
@@ -141,19 +140,7 @@ public class RubyController : MonoBehaviour
 
 
     }
-    void OnCollisionEnter2D()
-    {
-        Projectile g = gameObject.GetComponent<Projectile>();
-
-        fixedBot = fixedBot + 1;
-
-        countText.text = "Fixed:" + countText.ToString();
-
-
-
-    }
-
-
+   
 
 
 
