@@ -23,16 +23,20 @@ public class TextController : MonoBehaviour
     {
         Projectile controller = gameObject.GetComponent<Projectile>();
 
-        controller.GetComponent<Collider2D>();
-        if ()
-
-
-
+        if (controller.GetComponent<Collider2D>())
+        {
+            score = +1;
+            scoreValue.text = "Fixed:" + score.ToString();
         }
 
+
+
+
+    }
+
 }
 
 
 
-}
+
 
