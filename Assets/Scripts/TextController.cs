@@ -12,7 +12,7 @@ public class TextController : MonoBehaviour
     void Start()
     {
         score=0; 
-        scoreValue.text="Fixed:";  
+        scoreValue.text="Fixed:" + score.ToString();  
     
 
         
