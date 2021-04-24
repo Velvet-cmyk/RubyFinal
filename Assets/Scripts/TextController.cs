@@ -23,7 +23,12 @@ public class TextController : MonoBehaviour
     {
         Projectile controller = gameObject.GetComponent<Projectile>();
 
-        if (   
+        if ( controller!=null) 
+        {
+            if (controller.
+
+            
+        }  
             
     }  
         
