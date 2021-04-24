@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TextController : MonoBehaviour
 {
     public Text scoreValue; 
-    public int score; 
+    private int score; 
 
     // Start is called before the first frame update
     void Start()
