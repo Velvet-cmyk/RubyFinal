@@ -142,8 +142,8 @@ public class RubyController : MonoBehaviour
 
 
     }
-    void OnCollisionEnter2D(Collision2D other)
-    )
+    
+    
 
 
 
