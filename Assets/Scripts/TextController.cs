@@ -21,6 +21,8 @@ public class TextController : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter2D()
     {
-        Projectile controller=Game
+        Projectile controller=gameObject.GetComponent<Projectile>(); 
+
+        
     }
 }
