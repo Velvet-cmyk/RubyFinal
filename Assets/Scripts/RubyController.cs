@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class RubyController : MonoBehaviour
 {
 
+
     public int maxHealth = 5;
     public int currentHealth;
     public float speed = 3.0f;
@@ -20,15 +21,15 @@ public class RubyController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public GameObject projectilePrefab;
     AudioSource audioSource;
-   
-
     public ParticleSystem Effect = null;
-
-
-
-
-
     public AudioClip hitClip;
+
+
+
+
+
+
+
 
 
 
@@ -39,7 +40,7 @@ public class RubyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
-       
+
 
 
 
@@ -139,7 +140,7 @@ public class RubyController : MonoBehaviour
 
 
     }
-   
+
 
 
 
