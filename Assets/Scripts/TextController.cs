@@ -19,7 +19,7 @@ public class TextController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D()
     {
         
     }
