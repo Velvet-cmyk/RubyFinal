@@ -135,6 +135,7 @@ public class RubyController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
         
 
+
         anim.SetTrigger("Launch");
 
 
