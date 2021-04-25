@@ -16,6 +16,9 @@ public class EnemyController : MonoBehaviour
     Animator anim;
     bool broken = true;
     public ParticleSystem smokeEffect;
+    public Text scoreValue;
+    private int score;
+
 
 
 
@@ -26,6 +29,8 @@ public class EnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
         anim = GetComponent<Animator>();
+        score = 0;
+        scoreValue.text = "Fixed:" + score.ToString();
 
 
 
