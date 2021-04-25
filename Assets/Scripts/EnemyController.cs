@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
 
 
@@ -95,6 +95,8 @@ public class EnemyController : MonoBehaviour
 
         anim.SetTrigger("Fixed");
         smokeEffect.Stop();
+        score = +1;
+        scoreValue.text = "Fixed:" + score.ToString();
 
 
 
