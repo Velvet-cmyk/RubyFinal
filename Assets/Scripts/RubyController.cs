@@ -124,13 +124,14 @@ public class RubyController : MonoBehaviour
             PlaySound(hitClip);
             Instantiate(Effect, transform.position, Quaternion.identity);
         }
-        if (amount)
-        {
-            lose.text = "You Lose! Press R to Restart";
-        }
+
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
+        if (amount < 5)
+        {
+            lose.text = "You Lose! Press R to Restart";
+        }
 
 
     }
