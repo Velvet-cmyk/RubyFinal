@@ -23,7 +23,7 @@ public class RubyController : MonoBehaviour
     AudioSource audioSource;
     public ParticleSystem Effect = null;
     public AudioClip hitClip;
-    public Text lose; 
+    public Text lose;
 
 
 
@@ -42,7 +42,7 @@ public class RubyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
-        lose.text=""; 
+        lose.text = "";
 
 
 
@@ -124,7 +124,10 @@ public class RubyController : MonoBehaviour
             PlaySound(hitClip);
             Instantiate(Effect, transform.position, Quaternion.identity);
         }
-        if (amount<=0)
+        if (amount <= 0)
+        {
+            lose.text = "You Lose! Press R to Restart";
+        }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
