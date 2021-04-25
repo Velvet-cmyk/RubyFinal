@@ -131,7 +131,7 @@ public class RubyController : MonoBehaviour
         if (currentHealth <= 0)
         {
             lose.text = "You Lose! Press R to Restart";
-            
+
         }
 
 
