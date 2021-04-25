@@ -22,6 +22,7 @@ public class TextController : MonoBehaviour
     void OnCollisionEnter2D()
     {
         Projectile controller = gameObject.GetComponent<Projectile>();
+        
 
 
 
