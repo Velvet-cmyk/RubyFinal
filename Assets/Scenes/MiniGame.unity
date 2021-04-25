@@ -729,6 +729,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2941281122911991463, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
+        type: 3}
+      propertyPath: scoreValue
+      value: 
+      objectReference: {fileID: 930220680}
     - target: {fileID: 3552131545042567465, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
         type: 3}
       propertyPath: m_RootOrder
@@ -1172,6 +1177,7 @@ MonoBehaviour:
   vertical: 1
   changeTime: 3
   smokeEffect: {fileID: 641681052}
+  scoreValue: {fileID: 930220680}
 --- !u!1001 &636090656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1343,6 +1349,7 @@ MonoBehaviour:
   vertical: 0
   changeTime: 3
   smokeEffect: {fileID: 819525335}
+  scoreValue: {fileID: 930220680}
 --- !u!1 &758312650
 GameObject:
   m_ObjectHideFlags: 3
@@ -2163,6 +2170,7 @@ MonoBehaviour:
   vertical: 1
   changeTime: 3
   smokeEffect: {fileID: 851180542}
+  scoreValue: {fileID: 930220680}
 --- !u!1001 &1427824957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2175,6 +2183,11 @@ PrefabInstance:
       propertyPath: countText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2941281122911991463, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
+        type: 3}
+      propertyPath: scoreValue
+      value: 
+      objectReference: {fileID: 930220680}
     - target: {fileID: 3552131545042567465, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
         type: 3}
       propertyPath: m_RootOrder
@@ -2276,6 +2289,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2941281122911991463, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
+        type: 3}
+      propertyPath: scoreValue
+      value: 
+      objectReference: {fileID: 930220680}
     - target: {fileID: 3552131545042567465, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
         type: 3}
       propertyPath: m_RootOrder
@@ -2492,6 +2510,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2941281122911991463, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
+        type: 3}
+      propertyPath: scoreValue
+      value: 
+      objectReference: {fileID: 930220680}
     - target: {fileID: 3552131545042567465, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
         type: 3}
       propertyPath: m_RootOrder
@@ -14560,6 +14583,11 @@ PrefabInstance:
     - target: {fileID: 6866131398147141809, guid: 918942b0257568d46983b79b6d3c3982,
         type: 3}
       propertyPath: countText
+      value: 
+      objectReference: {fileID: 930220680}
+    - target: {fileID: 6866131398147141809, guid: 918942b0257568d46983b79b6d3c3982,
+        type: 3}
+      propertyPath: scoreValue
       value: 
       objectReference: {fileID: 930220680}
     - target: {fileID: 6866131398147141809, guid: 918942b0257568d46983b79b6d3c3982,
