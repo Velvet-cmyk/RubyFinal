@@ -25,7 +25,7 @@ public class TextController : MonoBehaviour
         
         
 
-        if (controller.GetComponent<>())
+        if (controller.GetComponent<Collider2D>())
         {
             score = +1;
             scoreValue.text = "Fixed:" + score.ToString();
