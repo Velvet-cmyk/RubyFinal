@@ -23,6 +23,7 @@ public class TextController : MonoBehaviour
     {
         Projectile controller = gameObject.GetComponent<Projectile>();
         
+        
 
         if (controller.GetComponent<Collider2D>())
         {
