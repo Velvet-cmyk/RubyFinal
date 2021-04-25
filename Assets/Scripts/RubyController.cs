@@ -23,6 +23,8 @@ public class RubyController : MonoBehaviour
     AudioSource audioSource;
     public ParticleSystem Effect = null;
     public AudioClip hitClip;
+    public Text scoreValue;
+    private int score;
 
 
 
@@ -137,6 +139,21 @@ public class RubyController : MonoBehaviour
 
 
         anim.SetTrigger("Launch");
+
+
+
+
+    }
+    void OnCollisionEnter2D()
+    {
+        Projectile controller = gameObject.GetComponent<Projectile>();
+
+
+        if (controller.GetComponent<Collider2D>())
+        {
+            score = +1;
+            scoreValue.text = "Fixed:" + score.ToString();
+        }
 
 
 
