@@ -138,6 +138,7 @@ public class RubyController : MonoBehaviour
 
 
         anim.SetTrigger("Launch");
+        if()
 
 
 
