@@ -151,9 +151,7 @@ MonoBehaviour:
   vertical: 0
   changeTime: 3
   smokeEffect: {fileID: 7459198034362248975}
-  countText: {fileID: 5207477099924859670, guid: 406fde85468a43c4385fbef6b1d1eee2,
-    type: 3}
-  fixedBot: 0
+  scoreValue: {fileID: 0}
 --- !u!95 &9151853753570236528
 Animator:
   serializedVersion: 3
@@ -285,8 +283,8 @@ MonoBehaviour:
   vertical: 0
   changeTime: 3
   smokeEffect: {fileID: 7459198034362248975}
-  countText: {fileID: 0}
-  fixedBot: 0
+  scoreValue: {fileID: 5207477099924859670, guid: 406fde85468a43c4385fbef6b1d1eee2,
+    type: 3}
 --- !u!1001 &1375389380206403082
 PrefabInstance:
   m_ObjectHideFlags: 0
