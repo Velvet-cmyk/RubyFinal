@@ -21,9 +21,9 @@ public class TextController : MonoBehaviour
     // Update is called once per frame
     void OnCollisionEnter2D()
     {
-        Projectile controller = gameObject.GetComponent<Projectile>();
-        
+        Projectile controller = GetComponent<Projectile>();
 
+        EnemyController enemy = GetComponent<EnemyController>();
 
 
         if (controller.GetComponent<Projectile>())
