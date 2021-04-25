@@ -124,6 +124,7 @@ public class RubyController : MonoBehaviour
             PlaySound(hitClip);
             Instantiate(Effect, transform.position, Quaternion.identity);
         }
+        if (amount<=0)
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
