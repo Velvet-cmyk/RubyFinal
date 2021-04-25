@@ -124,7 +124,7 @@ public class RubyController : MonoBehaviour
             PlaySound(hitClip);
             Instantiate(Effect, transform.position, Quaternion.identity);
         }
-        if (amount > 5)
+        if (amount >= 0)
         {
             lose.text = "You Lose! Press R to Restart";
         }
