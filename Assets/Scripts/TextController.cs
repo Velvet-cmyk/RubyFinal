@@ -26,7 +26,7 @@ public class TextController : MonoBehaviour
         EnemyController enemy = GetComponent<EnemyController>();
 
 
-        if (enemy.)
+        if (enemy)
         {
             score = +1;
             scoreValue.text = "Fixed:" + score.ToString();
