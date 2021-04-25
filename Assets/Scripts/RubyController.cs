@@ -128,7 +128,7 @@ public class RubyController : MonoBehaviour
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
-        if (currentHealth < 0)
+        if (currentHealth <= 0)
         {
             lose.text = "You Lose! Press R to Restart";
         }
