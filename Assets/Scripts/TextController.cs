@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class TextController : MonoBehaviour
 {
+    public audio
     public Text scoreValue;
     private int score;
 
