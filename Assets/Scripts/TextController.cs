@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class TextController : MonoBehaviour
 {
-    public audio
+    public AudioClip musicClipOne;
+
+    public AudioClip musicClipTwo;
+
     public Text scoreValue;
     private int score;
 
