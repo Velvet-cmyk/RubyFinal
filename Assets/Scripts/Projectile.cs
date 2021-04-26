@@ -7,16 +7,14 @@ using UnityEngine.UI;
 public class Projectile : MonoBehaviour
 {
     Rigidbody2D rb;
-    public Text scoreValue;
-    private int score;
+    
 
 
 
 
     void Start()
     {
-        score = 0;
-        scoreValue.text = "Fixed:" + score.ToString();
+        
     }
 
 
@@ -36,8 +34,7 @@ public class Projectile : MonoBehaviour
         if (e != null)
         {
             e.Fix();
-            score = +1;
-            scoreValue.text = "Fixed:" + score.ToString();
+          
 
         }
 
