@@ -9,6 +9,7 @@ public class TextController : MonoBehaviour
     public AudioClip musicClipOne;
 
     public AudioClip musicClipTwo;
+    public AudioSource musicSource;
 
     public Text scoreValue;
     private int score;
