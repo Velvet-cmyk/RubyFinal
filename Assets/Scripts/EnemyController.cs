@@ -88,7 +88,7 @@ public class EnemyController : MonoBehaviour
             player.ChangeHealth(-1);
         }
     }
-    
+
     public void Fix()
     {
         broken = false;
