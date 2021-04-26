@@ -16,8 +16,7 @@ public class EnemyController : MonoBehaviour
     Animator anim;
     bool broken = true;
     public ParticleSystem smokeEffect;
-    public Text scoreValue;
-    private int score;
+    
 
 
 
@@ -96,8 +95,7 @@ public class EnemyController : MonoBehaviour
 
         anim.SetTrigger("Fixed");
         smokeEffect.Stop();
-        score = +1;
-        scoreValue.text = "Fixed:" + score.ToString();
+       
 
 
 
