@@ -12,10 +12,7 @@ public class Projectile : MonoBehaviour
 
 
 
-    void Start()
-    {
-        
-    }
+    
 
 
     void Awake()
