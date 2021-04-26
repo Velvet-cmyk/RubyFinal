@@ -48,6 +48,34 @@ public class TextController : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            musicSource.clip = musicClipOne;
+            musicSource.Play();
+            
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            musicSource.Stop();
+           
+
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            musicSource.clip = musicClipTwo;
+            musicSource.Play();
+           
+        }
+
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            musicSource.Stop();
+           
+
+        }
+
     }
 
 }
