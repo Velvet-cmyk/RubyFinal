@@ -15,7 +15,8 @@ public class Projectile : MonoBehaviour
 
     void Start()
     {
-
+        score = 0;
+        scoreValue.text = "Fixed:" + score.ToString();
     }
 
 
