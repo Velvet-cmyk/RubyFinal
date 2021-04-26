@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
 
 public class Projectile : MonoBehaviour
@@ -11,7 +11,12 @@ public class Projectile : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
