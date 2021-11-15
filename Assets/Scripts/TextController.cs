@@ -35,7 +35,7 @@ public class TextController : MonoBehaviour
 
     void Update()
     {
-        if (GetComponent<EnemyController>().broken == false)
+        if (GetComponent<EnemyController>().broken == false&&score==0)
         {
             score += 1;
         }
