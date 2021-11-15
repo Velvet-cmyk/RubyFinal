@@ -24,6 +24,9 @@ public class RubyController : MonoBehaviour
     public ParticleSystem Effect = null;
     public AudioClip hitClip;
     public Text lose;
+    public int ammoCount;
+    public Text Ammo;
+
 
 
 
@@ -43,6 +46,7 @@ public class RubyController : MonoBehaviour
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
         lose.text = "";
+        ammoCount = 4;
 
 
 
@@ -62,6 +66,7 @@ public class RubyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Ammo.text = ("Ammo:" + ammoCount.ToString());
         if (Input.GetKeyDown(KeyCode.X))
         {
             RaycastHit2D hit = Physics2D.Raycast(rb.position + Vector2.up * 0.2f,
@@ -94,9 +99,10 @@ public class RubyController : MonoBehaviour
             if (invincibleTimer < 0)
                 isInvincible = false;
         }
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C) && ammoCount > 0)
         {
             Launch();
+            ammoCount -= 1;
         }
         if (Input.GetKeyDown("escape"))
         {
@@ -130,9 +136,13 @@ public class RubyController : MonoBehaviour
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
         if (currentHealth <= 0)
         {
+            Destroy(this);
+            Destroy(gameObject);
             lose.text = "You Lose! Press R to Restart";
 
+
         }
+
 
 
     }
@@ -151,6 +161,13 @@ public class RubyController : MonoBehaviour
 
 
 
+    }
+    public void Reload(int reloadCount)
+    {
+        if (reloadCount > 0)
+        {
+            ammoCount += reloadCount;
+        }
     }
 
 

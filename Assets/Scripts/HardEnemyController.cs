@@ -12,9 +12,9 @@ public class HardEnemyController : MonoBehaviour
     float timer;
     int direction = 1;
     Animator anim;
-    bool broken = true;
+    public bool broken = true;
     public ParticleSystem smokeEffect;
-    public AudioClip hitClip; 
+    public AudioClip hitClip;
 
     // Start is called before the first frame update
     void Start()
@@ -85,7 +85,7 @@ public class HardEnemyController : MonoBehaviour
         smokeEffect.Stop();
 
     }
-   
+
 }
 
 
