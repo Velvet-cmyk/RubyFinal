@@ -113,7 +113,7 @@ public class RubyController : MonoBehaviour
         {
             Application.Quit();
         }
-        if (GetComponent<EnemyController>())
+        if (GetComponent<EnemyController>().broken == false)
         {
             score += 1;
         }
