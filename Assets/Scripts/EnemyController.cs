@@ -17,7 +17,7 @@ public class EnemyController : MonoBehaviour
     public bool broken = true;
     public ParticleSystem smokeEffect;
     private int score;
-    public text scoreValue;
+    public Text scoreValue;
 
 
 
