@@ -28,7 +28,7 @@ public class RubyController : MonoBehaviour
     public Text Ammo;
     public Text scoreValue;
     public int score;
-    
+
 
 
 
@@ -50,8 +50,8 @@ public class RubyController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         lose.text = "";
         ammoCount = 4;
-        score=0; 
-        scoreValue.text=("Score:"+score.ToString()); 
+        score = 0;
+        scoreValue.text = ("Score:" + score.ToString());
 
 
 
@@ -114,6 +114,9 @@ public class RubyController : MonoBehaviour
             Application.Quit();
         }
         if (GetComponent<EnemyController>())
+        {
+            score += 1;
+        }
 
     }
     void FixedUpdate()
