@@ -26,12 +26,12 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
-        scoreValue.text = ("Score:" + score.ToString());
+
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
         anim = GetComponent<Animator>();
-
+        score = 0;
+        scoreValue.text = ("Score:" + score.ToString());
 
 
 
@@ -97,8 +97,9 @@ public class EnemyController : MonoBehaviour
 
         anim.SetTrigger("Fixed");
         smokeEffect.Stop();
-
         score += 1;
+
+
 
 
 
