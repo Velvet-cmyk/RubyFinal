@@ -99,7 +99,7 @@ public class EnemyController : MonoBehaviour
         smokeEffect.Stop();
 
         
-            score += 1;
+           
         
 
 
