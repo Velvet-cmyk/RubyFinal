@@ -16,7 +16,8 @@ public class EnemyController : MonoBehaviour
     Animator anim;
     public bool broken = true;
     public ParticleSystem smokeEffect;
-    
+    private int score
+    Public Text
 
 
 
