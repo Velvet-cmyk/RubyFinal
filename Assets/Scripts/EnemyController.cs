@@ -30,8 +30,8 @@ public class EnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
         anim = GetComponent<Animator>();
-        score = 0;
-        scoreValue.text = ("Score:" + score.ToString());
+       
+        
 
 
 
