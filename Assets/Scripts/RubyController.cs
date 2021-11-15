@@ -26,8 +26,7 @@ public class RubyController : MonoBehaviour
     public Text lose;
     public int ammoCount;
     public Text Ammo;
-    public Text scoreValue;
-    public int score;
+
 
 
 
@@ -50,7 +49,7 @@ public class RubyController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         lose.text = "";
         ammoCount = 4;
-        
+
 
 
 
@@ -112,7 +111,7 @@ public class RubyController : MonoBehaviour
         {
             Application.Quit();
         }
-        
+
 
     }
     void FixedUpdate()
