@@ -15,12 +15,7 @@ public class TextController : MonoBehaviour
     public int score;
     
 
-    private int c1;
-    private int c2;
-    private int c3;
-    private int c4;
-    private int c5;
-    private int c6;
+   
     public Text win;
 
     // Start is called before the first frame update
