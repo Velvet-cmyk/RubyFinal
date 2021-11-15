@@ -80,7 +80,7 @@ public class TextController : MonoBehaviour
         if (robot6.GetComponent<HardEnemyController>().broken == false && c6 == 0)
         {
             score += 1;
-            c5 += 1;
+            c6 += 1;
         }
 
 
@@ -89,7 +89,7 @@ public class TextController : MonoBehaviour
             win.text = "Talk To Jambi to see stage 2!";
         }
 
-       
+
         if (Input.GetKeyDown(KeyCode.X))
         {
             SceneManager.LoadScene("Stage 2");
