@@ -113,7 +113,7 @@ public class RubyController : MonoBehaviour
         {
             Application.Quit();
         }
-        if (GetComponent<EnemyController>().Fix)
+        if (GetComponent<EnemyController>())
 
     }
     void FixedUpdate()
