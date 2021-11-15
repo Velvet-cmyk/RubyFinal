@@ -25,6 +25,8 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        score = 0;
+        scoreValue.text = ("Score:" + score.ToString());
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
         anim = GetComponent<Animator>();
