@@ -13,9 +13,9 @@ public class TextController : MonoBehaviour
 
     public Text scoreValue;
     public int score;
-    
 
-   
+
+
     public Text win;
 
     // Start is called before the first frame update
@@ -23,8 +23,8 @@ public class TextController : MonoBehaviour
     {
         win.text = "";
         score = 0;
-        scoreValue.text=("Score:"+score.ToString()); 
-      
+        scoreValue.text = ("Score:" + score.ToString());
+
 
 
 
@@ -35,12 +35,16 @@ public class TextController : MonoBehaviour
 
     void Update()
     {
-       if
+            if (GetComponent<EnemyController>().broken==false)
+         {
+             score+=1; 
+          }
 
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            SceneManager.LoadScene("Stage 2");
-        }
+
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                SceneManager.LoadScene("Stage 2");
+            }
 
 
 
