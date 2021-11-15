@@ -35,7 +35,7 @@ public class TextController : MonoBehaviour
 
     void Update()
     {
-       
+       if
 
         if (Input.GetKeyDown(KeyCode.X))
         {
