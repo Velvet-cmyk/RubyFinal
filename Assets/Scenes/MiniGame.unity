@@ -966,12 +966,6 @@ MonoBehaviour:
   musicSource: {fileID: 2095838642}
   scoreValue: {fileID: 837548789}
   score: 0
-  robot1: {fileID: 1396679893}
-  robot2: {fileID: 739026283}
-  robot3: {fileID: 631309507}
-  robot4: {fileID: 1306831672}
-  robot5: {fileID: 1636688864}
-  robot6: {fileID: 1876412335}
   win: {fileID: 67167211}
 --- !u!1001 &433129508
 PrefabInstance:
@@ -2815,12 +2809,6 @@ MonoBehaviour:
   changeTime: 3
   broken: 1
   smokeEffect: {fileID: 851180542}
---- !u!1 &1396679893 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5075033389508397110, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1427824957}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1427824957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15326,7 +15314,7 @@ PrefabInstance:
     - target: {fileID: 6866131398147141809, guid: 918942b0257568d46983b79b6d3c3982,
         type: 3}
       propertyPath: score
-      value: 
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6866131398147141809, guid: 918942b0257568d46983b79b6d3c3982,
         type: 3}
@@ -15342,7 +15330,7 @@ PrefabInstance:
         type: 3}
       propertyPath: scoreValue
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 837548789}
     - target: {fileID: 6866131398147141809, guid: 918942b0257568d46983b79b6d3c3982,
         type: 3}
       propertyPath: healthEffect
