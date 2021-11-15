@@ -31,7 +31,7 @@ public class EnemyController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         timer = changeTime;
         anim = GetComponent<Animator>();
-        
+
 
 
 
@@ -97,7 +97,8 @@ public class EnemyController : MonoBehaviour
 
         anim.SetTrigger("Fixed");
         smokeEffect.Stop();
-       
+
+        score += 1;
 
 
 
