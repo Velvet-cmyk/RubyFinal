@@ -13,12 +13,7 @@ public class TextController : MonoBehaviour
 
     public Text scoreValue;
     public int score;
-    public GameObject robot1;
-    public GameObject robot2;
-    public GameObject robot3;
-    public GameObject robot4;
-    public GameObject robot5;
-    public GameObject robot6;
+    
 
     private int c1;
     private int c2;
