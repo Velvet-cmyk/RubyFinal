@@ -13,9 +13,19 @@ public class TextController : MonoBehaviour
 
     public Text scoreValue;
     public int score;
+    public GameObject robot1;
+    public GameObject robot2;
+    public GameObject robot3;
+    public GameObject robot4;
+    public GameObject robot5;
+    public GameObject robot6;
 
-
-
+    private int c1;
+    private int c2;
+    private int c3;
+    private int c4;
+    private int c5;
+    private int c6;
     public Text win;
 
     // Start is called before the first frame update
@@ -23,7 +33,12 @@ public class TextController : MonoBehaviour
     {
         win.text = "";
         score = 0;
-        scoreValue.text = ("Score:" + score.ToString());
+        c1 = 0;
+        c2 = 0;
+        c3 = 0;
+        c4 = 0;
+        c5 = 0;
+        c6 = 0;
 
 
 
@@ -35,9 +50,43 @@ public class TextController : MonoBehaviour
 
     void Update()
     {
-        if (GetComponent<EnemyController>().broken == false&&score==0)
+        scoreValue.text = "Fixed:" + score.ToString();
+
+        if (robot1.GetComponent<EnemyController>().broken == false && c1 == 0)
         {
             score += 1;
+            c1 = 1;
+        }
+        if (robot2.GetComponent<EnemyController>().broken == false && c2 == 0)
+        {
+            score += 1;
+            c2 += 1;
+        }
+        if (robot3.GetComponent<EnemyController>().broken == false && c3 == 0)
+        {
+            score += 1;
+            c3 += 1;
+        }
+        if (robot4.GetComponent<EnemyController>().broken == false && c4 == 0)
+        {
+            score += 1;
+            c4 += 1;
+        }
+        if (robot5.GetComponent<HardEnemyController>().broken == false && c5 == 0)
+        {
+            score += 1;
+            c5 += 1;
+        }
+        if (robot6.GetComponent<HardEnemyController>().broken == false && c6 == 0)
+        {
+            score += 1;
+            c6 += 1;
+        }
+
+
+        if (score == 4)
+        {
+            win.text = "Talk To Jambi to see stage 2!";
         }
 
 
