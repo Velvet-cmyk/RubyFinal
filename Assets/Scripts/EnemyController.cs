@@ -16,7 +16,7 @@ public class EnemyController : MonoBehaviour
     Animator anim;
     public bool broken = true;
     public ParticleSystem smokeEffect;
-    private int score;
+    private int score = 0;
     public Text scoreValue;
 
 
@@ -31,7 +31,7 @@ public class EnemyController : MonoBehaviour
         timer = changeTime;
         anim = GetComponent<Animator>();
         score = 0;
-       scoreValue.text= ("Score:"+score.ToString()); 
+        scoreValue.text = ("Score:" + score.ToString());
 
 
 
