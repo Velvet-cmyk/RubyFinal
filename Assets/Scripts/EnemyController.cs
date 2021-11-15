@@ -31,7 +31,7 @@ public class EnemyController : MonoBehaviour
         timer = changeTime;
         anim = GetComponent<Animator>();
         score = 0;
-        scoreValue.text = ("Score:" + score.ToString());
+       scoreValue.text= ("Score:"+score.ToString()); 
 
 
 
