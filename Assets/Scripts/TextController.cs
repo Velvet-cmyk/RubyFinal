@@ -35,16 +35,16 @@ public class TextController : MonoBehaviour
 
     void Update()
     {
-            if (GetComponent<EnemyController>().broken==false)
-         {
-             score+=1; 
-          }
+        if (scoreValue.GetComponent<EnemyController>().broken == false)
+        {
+            score += 1;
+        }
 
 
-            if (Input.GetKeyDown(KeyCode.X))
-            {
-                SceneManager.LoadScene("Stage 2");
-            }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            SceneManager.LoadScene("Stage 2");
+        }
 
 
 
