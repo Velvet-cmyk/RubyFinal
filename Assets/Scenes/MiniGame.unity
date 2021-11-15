@@ -1423,6 +1423,7 @@ MonoBehaviour:
   changeTime: 3
   broken: 1
   smokeEffect: {fileID: 641681052}
+  scoreValue: {fileID: 0}
 --- !u!1001 &636090656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1595,6 +1596,7 @@ MonoBehaviour:
   changeTime: 3
   broken: 1
   smokeEffect: {fileID: 819525335}
+  scoreValue: {fileID: 0}
 --- !u!1 &758312650
 GameObject:
   m_ObjectHideFlags: 3
@@ -2809,6 +2811,7 @@ MonoBehaviour:
   changeTime: 3
   broken: 1
   smokeEffect: {fileID: 851180542}
+  scoreValue: {fileID: 0}
 --- !u!1001 &1427824957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2825,7 +2828,7 @@ PrefabInstance:
         type: 3}
       propertyPath: scoreValue
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 837548789}
     - target: {fileID: 3552131545042567465, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
         type: 3}
       propertyPath: m_RootOrder

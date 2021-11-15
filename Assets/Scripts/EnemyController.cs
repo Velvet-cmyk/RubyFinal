@@ -97,7 +97,11 @@ public class EnemyController : MonoBehaviour
 
         anim.SetTrigger("Fixed");
         smokeEffect.Stop();
-        score += 1;
+        
+        if(broken==false)
+        {
+            score+=1; 
+        }
 
 
 
