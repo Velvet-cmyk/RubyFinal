@@ -131,7 +131,7 @@ public class RubyController : MonoBehaviour
             if (other.tag == "SpeedBoost")
             {
                 boosting = true;
-                speed = 6;
+                speed = 10;
                 Destroy(other.gameObject);
             }
         }
