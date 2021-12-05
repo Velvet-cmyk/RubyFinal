@@ -53,6 +53,8 @@ public class RubyController : MonoBehaviour
         lose.text = "";
         ammoCount = 4;
         speed=5; 
+        boostTimer=0; 
+        boosting=false; 
 
 
 
