@@ -126,6 +126,10 @@ public class RubyController : MonoBehaviour
                 boosting=false; 
             }
         }
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            
+        }
 
     }
     void FixedUpdate()
