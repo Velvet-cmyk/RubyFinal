@@ -118,21 +118,21 @@ public class RubyController : MonoBehaviour
         }
         if (boosting)
         {
-            boostTimer+= Time.deltaTime; 
-            if(boostTimer>=2)
+            boostTimer += Time.deltaTime;
+            if (boostTimer >= 2)
             {
-                speed=3; 
-                boostTimer=0; 
-                boosting=false; 
+                speed = 3;
+                boostTimer = 0;
+                boosting = false;
             }
         }
         void OnTriggerEnter2D(Collider2D other)
         {
-            if(other.tag=="SpeedBoost")
+            if (other.tag == "SpeedBoost")
             {
-                boosting=true; 
-                speed=6; 
-                
+                boosting = true;
+                speed = 6;
+                Destroy(other.gameObject);
             }
         }
 
