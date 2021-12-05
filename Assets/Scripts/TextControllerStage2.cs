@@ -75,7 +75,7 @@ public class TextControllerStage2 : MonoBehaviour
             score += 1;
             c6 += 1;
         }
-        if (robot9.GetComponent<HardEnemyController>().broken == false && c6 == 0)
+        if (robot9.GetComponent<HardEnemyController>().broken == false && c9 == 0)
         {
             score += 1;
             c6 += 1;
