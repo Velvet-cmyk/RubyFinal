@@ -131,6 +131,12 @@ public class RubyController : MonoBehaviour
         }
         currentTime-=1*Time.deltaTime;
         countdownText.text=currentTime.ToString("0");
+        if(currentTime<=0)
+        {
+            currentTime=0;
+            lose.text = "You Lose! Press R to Restart";
+
+        }
 
 
     }
