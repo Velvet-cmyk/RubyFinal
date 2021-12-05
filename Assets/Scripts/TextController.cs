@@ -21,7 +21,7 @@ public class TextController : MonoBehaviour
     public GameObject robot6;
     public GameObject robot7;
     public GameObject robot8;
-    public GameObject robot9; 
+    public GameObject robot9;
 
 
 
@@ -32,8 +32,8 @@ public class TextController : MonoBehaviour
     private int c5;
     private int c6;
     private int c7;
-    private int c8; 
-    private int c9; 
+    private int c8;
+    private int c9;
     public Text win;
 
     // Start is called before the first frame update
@@ -47,9 +47,9 @@ public class TextController : MonoBehaviour
         c4 = 0;
         c5 = 0;
         c6 = 0;
-        c7=0;
-        c8=0;
-        c9=0; 
+        c7 = 0;
+        c8 = 0;
+        c9 = 0;
 
 
 
@@ -89,6 +89,21 @@ public class TextController : MonoBehaviour
             c5 += 1;
         }
         if (robot6.GetComponent<HardEnemyController>().broken == false && c6 == 0)
+        {
+            score += 1;
+            c6 += 1;
+        }
+        if (robot7.GetComponent<HardEnemyController>().broken == false && c5 == 0)
+        {
+            score += 1;
+            c5 += 1;
+        }
+        if (robot8.GetComponent<HardEnemyController>().broken == false && c6 == 0)
+        {
+            score += 1;
+            c6 += 1;
+        }
+        if (robot9.GetComponent<HardEnemyController>().broken == false && c6 == 0)
         {
             score += 1;
             c6 += 1;
