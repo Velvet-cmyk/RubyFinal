@@ -119,7 +119,7 @@ public class RubyController : MonoBehaviour
         if (boosting)
         {
             boostTimer += Time.deltaTime;
-            if (boostTimer >= 2)
+            if (boostTimer >= 1)
             {
                 speed = 3;
                 boostTimer = 0;
