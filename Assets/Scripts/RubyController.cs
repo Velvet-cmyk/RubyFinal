@@ -129,6 +129,8 @@ public class RubyController : MonoBehaviour
                 boosting = false;
             }
         }
+        currentTime-=1*Time.deltaTime;
+        
 
 
     }
