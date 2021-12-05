@@ -966,6 +966,12 @@ MonoBehaviour:
   musicSource: {fileID: 2095838642}
   scoreValue: {fileID: 837548789}
   score: 0
+  robot1: {fileID: 0}
+  robot2: {fileID: 0}
+  robot3: {fileID: 0}
+  robot4: {fileID: 0}
+  robot5: {fileID: 0}
+  robot6: {fileID: 0}
   win: {fileID: 67167211}
 --- !u!1001 &433129508
 PrefabInstance:
@@ -2876,7 +2882,7 @@ PrefabInstance:
         type: 3}
       propertyPath: scoreValue
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 837548789}
     - target: {fileID: 3552131545042567465, guid: 68ecb58ea343f6e4d93b4ca7474a6c2e,
         type: 3}
       propertyPath: m_RootOrder
