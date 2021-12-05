@@ -118,7 +118,7 @@ public class RubyController : MonoBehaviour
         }
         if (boosting)
         {
-            
+            boostTimer+= Time
         }
 
     }
