@@ -19,6 +19,11 @@ public class TextController : MonoBehaviour
     public GameObject robot4;
     public GameObject robot5;
     public GameObject robot6;
+    public GameObject robot7;
+    public GameObject robot8;
+    public GameObject robot9; 
+
+
 
     private int c1;
     private int c2;
@@ -26,6 +31,9 @@ public class TextController : MonoBehaviour
     private int c4;
     private int c5;
     private int c6;
+    private int c7;
+    private int c8; 
+    private int c9; 
     public Text win;
 
     // Start is called before the first frame update
@@ -39,6 +47,9 @@ public class TextController : MonoBehaviour
         c4 = 0;
         c5 = 0;
         c6 = 0;
+        c7=0;
+        c8=0;
+        c9=0; 
 
 
 
