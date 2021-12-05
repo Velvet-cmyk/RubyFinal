@@ -52,7 +52,7 @@ public class RubyController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         lose.text = "";
         ammoCount = 4;
-        speed = 5;
+        speed = 2;
         boostTimer = 0;
         boosting = false;
 
@@ -119,7 +119,7 @@ public class RubyController : MonoBehaviour
         if (boosting)
         {
             boostTimer += Time.deltaTime;
-            if (boostTimer >= 1)
+            if (boostTimer >= 2)
             {
                 speed = 3;
                 boostTimer = 0;
