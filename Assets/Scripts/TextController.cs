@@ -114,6 +114,7 @@ public class TextController : MonoBehaviour
         {
             win.text = "Talk To Jambi to see stage 2!";
         }
+        if
 
 
         if (Input.GetKeyDown(KeyCode.X))
