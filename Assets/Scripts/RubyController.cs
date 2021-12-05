@@ -31,9 +31,9 @@ public class RubyController : MonoBehaviour
     private bool boosting;
 
     public float speed;
-    float currentTime=0f; 
-    float startingTime=60f; 
-    [SerializeField] Text countdownText; 
+    float currentTime = 0f;
+    float startingTime = 60f;
+    [SerializeField] Text countdownText;
 
 
 
@@ -58,7 +58,7 @@ public class RubyController : MonoBehaviour
         speed = 3;
         boostTimer = 0;
         boosting = false;
-        currentTime=startingTime; 
+        currentTime = startingTime;
 
 
 
@@ -129,11 +129,12 @@ public class RubyController : MonoBehaviour
                 boosting = false;
             }
         }
-        currentTime-=1*Time.deltaTime;
-        countdownText.text=currentTime.ToString("0");
-        if(currentTime<=0)
+        currentTime -= 1 * Time.deltaTime;
+        countdownText.text = currentTime.ToString("0");
+        if (currentTime <= 0)
         {
-            currentTime=0;
+            currentTime = 0;
+            Destroy(gameObject);
             lose.text = "You Lose! Press R to Restart";
 
         }
