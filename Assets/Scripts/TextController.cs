@@ -114,7 +114,10 @@ public class TextController : MonoBehaviour
         {
             win.text = "Talk To Jambi to see stage 2!";
         }
-        if
+        if (score == 5)
+        {
+            win.text = "You Win!";
+        }
 
 
         if (Input.GetKeyDown(KeyCode.X))
