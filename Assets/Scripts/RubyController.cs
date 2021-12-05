@@ -29,6 +29,7 @@ public class RubyController : MonoBehaviour
 
     private float boostTimer;
     private bool boosting;
+    private float fast; 
 
 
 
