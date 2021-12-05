@@ -9,7 +9,7 @@ public class RubyController : MonoBehaviour
 
     public int maxHealth = 5;
     public int currentHealth;
-    
+
     public float timeInvincible = 2.0f;
     public int health { get { return currentHealth; } }
     bool isInvincible;
@@ -127,7 +127,7 @@ public class RubyController : MonoBehaviour
                 boosting = false;
             }
         }
-        
+
 
     }
     void OnTriggerEnter2D(Collider2D other)
@@ -135,7 +135,7 @@ public class RubyController : MonoBehaviour
         if (other.tag == "SpeedBoost")
         {
             boosting = true;
-            speed = 10;
+            speed = 6;
             Destroy(other.gameObject);
         }
     }
