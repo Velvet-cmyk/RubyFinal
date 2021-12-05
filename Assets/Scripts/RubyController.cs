@@ -31,7 +31,8 @@ public class RubyController : MonoBehaviour
     private bool boosting;
 
     public float speed;
-
+    float currentTime=0f; 
+    float startingTime=60f; 
 
 
 
