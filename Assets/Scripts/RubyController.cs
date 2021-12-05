@@ -116,7 +116,10 @@ public class RubyController : MonoBehaviour
         {
             Application.Quit();
         }
-
+        if (boosting)
+        {
+            
+        }
 
     }
     void FixedUpdate()
