@@ -26,6 +26,8 @@ public class RubyController : MonoBehaviour
     public Text lose;
     public int ammoCount;
     public Text Ammo;
+    private float speed; 
+    private float boostTimer; 
 
 
 
