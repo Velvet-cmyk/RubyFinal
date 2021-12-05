@@ -58,7 +58,7 @@ public class RubyController : MonoBehaviour
         speed = 3;
         boostTimer = 0;
         boosting = false;
-
+        currentTime=startingTime; 
 
 
 
