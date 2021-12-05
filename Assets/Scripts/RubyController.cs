@@ -127,16 +127,17 @@ public class RubyController : MonoBehaviour
                 boosting = false;
             }
         }
-        void OnTriggerEnter2D(Collider2D other)
-        {
-            if (other.tag == "SpeedBoost")
-            {
-                boosting = true;
-                speed = 10;
-                Destroy(other.gameObject);
-            }
-        }
+        
 
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "SpeedBoost")
+        {
+            boosting = true;
+            speed = 10;
+            Destroy(other.gameObject);
+        }
     }
     void FixedUpdate()
     {
