@@ -68,17 +68,17 @@ public class TextControllerStage2 : MonoBehaviour
         if (robot7.GetComponent<HardEnemyController>().broken == false && c7 == 0)
         {
             score += 1;
-            c5 += 1;
+            c7 += 1;
         }
         if (robot8.GetComponent<HardEnemyController>().broken == false && c8 == 0)
         {
             score += 1;
-            c6 += 1;
+            c8 += 1;
         }
         if (robot9.GetComponent<HardEnemyController>().broken == false && c9 == 0)
         {
             score += 1;
-            c6 += 1;
+            c9 += 1;
         }
 
 
