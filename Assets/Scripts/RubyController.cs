@@ -130,7 +130,7 @@ public class RubyController : MonoBehaviour
             }
         }
         currentTime-=1*Time.deltaTime;
-        
+        countdownText.text=currentTime.ToString("0");
 
 
     }
