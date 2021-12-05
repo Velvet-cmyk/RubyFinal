@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class TextController : MonoBehaviour
+public class TextControllerStage2 : MonoBehaviour
 {
     public AudioClip musicClipOne;
 
