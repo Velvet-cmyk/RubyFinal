@@ -26,9 +26,9 @@ public class RubyController : MonoBehaviour
     public Text lose;
     public int ammoCount;
     public Text Ammo;
-    private float speed; 
-    private float boostTimer; 
-    private bool boosting; 
+
+    private float boostTimer;
+    private bool boosting;
 
 
 
@@ -52,9 +52,9 @@ public class RubyController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         lose.text = "";
         ammoCount = 4;
-        speed=5; 
-        boostTimer=0; 
-        boosting=false; 
+        speed = 5;
+        boostTimer = 0;
+        boosting = false;
 
 
 
@@ -122,8 +122,8 @@ public class RubyController : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 position = rb.position;
-        position.x = position.x + 3.0f * horizontal * Time.deltaTime;
-        position.y = position.y + 3.0f * vertical * Time.deltaTime;
+        position.x = position.x + speed * horizontal * Time.deltaTime;
+        position.y = position.y + speed * vertical * Time.deltaTime;
         rb.MovePosition(position);
     }
     public void ChangeHealth(int amount)
