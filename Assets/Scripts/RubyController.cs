@@ -9,7 +9,7 @@ public class RubyController : MonoBehaviour
 
     public int maxHealth = 5;
     public int currentHealth;
-    public float speed = 2.0f;
+    
     public float timeInvincible = 2.0f;
     public int health { get { return currentHealth; } }
     bool isInvincible;
@@ -29,8 +29,8 @@ public class RubyController : MonoBehaviour
 
     private float boostTimer;
     private bool boosting;
-    private float fast; 
 
+    public float speed;
 
 
 
