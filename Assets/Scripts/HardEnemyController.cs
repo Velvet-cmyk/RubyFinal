@@ -15,8 +15,7 @@ public class HardEnemyController : MonoBehaviour
     public bool broken = true;
     public ParticleSystem smokeEffect;
     public AudioClip hitClip;
-    private int score = 0;
-    public Text scoreValue;
+
 
     // Start is called before the first frame update
     void Start()
