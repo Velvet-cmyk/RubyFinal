@@ -33,6 +33,7 @@ public class RubyController : MonoBehaviour
     public float speed;
     float currentTime=0f; 
     float startingTime=60f; 
+    [SerializeField] Text countdownText; 
 
 
 
