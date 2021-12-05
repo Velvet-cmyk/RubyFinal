@@ -118,7 +118,11 @@ public class RubyController : MonoBehaviour
         }
         if (boosting)
         {
-            boostTimer+= Time
+            boostTimer+= Time.deltaTime; 
+            if(boostTimer>=3)
+            {
+                
+            }
         }
 
     }
