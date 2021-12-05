@@ -21171,6 +21171,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 918942b0257568d46983b79b6d3c3982, type: 3}
+--- !u!82 &930753928 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5555337077226566851, guid: 918942b0257568d46983b79b6d3c3982,
+    type: 3}
+  m_PrefabInstance: {fileID: 930753927}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &968423378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21435,6 +21441,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2110241292801106336, guid: 1955564a4bf37da45b45a5324a74983a,
+        type: 3}
+      propertyPath: hitClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a6f9c0c061accac469f88239cf320d28, type: 3}
     - target: {fileID: 2110241292801106337, guid: 1955564a4bf37da45b45a5324a74983a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -23123,9 +23134,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09b09e7e01558141a4387d9d526f8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicClipOne: {fileID: 0}
-  musicClipTwo: {fileID: 0}
-  musicSource: {fileID: 0}
+  musicClipOne: {fileID: 8300000, guid: 5f8df252d7531cf4ba5f08efb5ecde92, type: 3}
+  musicClipTwo: {fileID: 8300000, guid: 6b10bf4aad3c56348856f569110c4729, type: 3}
+  musicSource: {fileID: 930753928}
   scoreValue: {fileID: 622266031}
   score: 0
   robot5: {fileID: 1156291423}
